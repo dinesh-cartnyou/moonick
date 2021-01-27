@@ -25,6 +25,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { homePageData } from '../actions/home-page';
 import { contactPageData } from '../actions/contact';
+import TopMostCategories from './top-most-categories';
 import axios from 'axios';
 
 const Home = ({ homePageData, contactPageData, data, contact }) => {
@@ -59,6 +60,39 @@ const Home = ({ homePageData, contactPageData, data, contact }) => {
     contactPageData();
   }, []);
 
+  const topMostCategories = [
+    {
+      name: 'Men',
+      key: 'men',
+      route: '/men'
+    },
+    {
+      name: 'Women',
+      key: 'women',
+      route: '/women'
+    },
+    {
+      name: 'Accessorries',
+      key: 'accessorries',
+      route: '/accessories'
+    },
+    {
+      name: 'CategoryA',
+      key: 'categoryA',
+      route: '/category-A'
+    },
+    {
+      name: 'CategoryB',
+      key: 'categoryB',
+      route: '/category-B'
+    },
+    {
+      name: 'CategoryC',
+      key: 'categoryC',
+      route: '/category-C'
+    }
+  ];
+
   // useEffect(() => {    
   //     let res = axios.get('http://15.206.89.124/supershop/api/getHomeRecord');
   //     res.then(response => {
@@ -80,11 +114,21 @@ const Home = ({ homePageData, contactPageData, data, contact }) => {
           </div>
           <section className='bodypanelmian'>
             <div className='container'>
+              <TopMostCategories data={topMostCategories} />
               {
                 data && data.data && data.data.banners && Object.keys(data.data).length > 0 && Object.keys(data.data.banners).length &&
                 <div className='row no-gutters'>
                   <div className='col'>
                     <div className='bodypanel'>
+                      <div className='addbanner'>
+                        {
+                          // data.data.banners.sale_banner.imageUrl &&
+                          <Link >
+                            <img src={'image/home/addbtop.png'} className='img-fluid' />
+                          </Link>
+                        }
+                      </div>
+                      <BannerCarousel />
                       {
                         data.data.banners.sale_banner && data.data.banners.sale_banner.status &&
                         <div className='addbanner'>
