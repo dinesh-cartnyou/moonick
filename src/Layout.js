@@ -52,7 +52,8 @@ export const Layout = () => {
     return (
         <Router>
             <Switch>
-                <Route exact path='/' component={Home} />
+                <Route path='/' component={Home} />
+                {/* <Redirect exact from='/' to='/home' /> */}
                 <Route exact path='/category' component={Category} />
                 <Route exact path='/allproducts' component={AllProducts} />
                 <Route exact path='/productdescription' component={ProductDescription} />
