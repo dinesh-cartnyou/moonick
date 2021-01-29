@@ -1,50 +1,46 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import PropTypes from 'prop-types';
 
-function useHeaderchange(newPath, newHeaderType) {
+function UseHeaderchange(newPath, newHeaderType, ...rest) {
     if (!window['newMemory']) {
         window['newMemory'] = {};
+        console.log('new memory', window['newMemory']);
     }
-    const { memory: newMemory } = window;
+    const { newMemory } = window;
 
     const initialState = {
         path: '',
         headerType: 'home',
         ...rest
     }
-    memory[newPath] = initialState;
+    if (!newMemory[newPath]) newMemory[newPath] = initialState;
+
     const [filters, setFilters] = useState(initialState);
 
+    let handleMemoryChange = useCallback(() => {
+        const { path, headerType } = filters;
+        if (!newMemory[newPath]) {
+            setFilters({
+                ...filters,
+                path: newPath,
+                headerType: newHeaderType || 'home'
+            })
+        } else {
+            return [filters, setFilters];
+        }
+    }, [filters])
+
     useEffect(() => {
-        window.addEventListener('memoryChange', () => {
-            const { path, headerType } = filters;
-            if (!memory[newPath]) {
-                setFilters({
-                    ...filters,
-                    path: newPath,
-                    headerType: newHeaderType || 'home'
-                })
-            } else {
-                return [filters, setFilters];
-            }
-        })
-        window.removeEventListener('memoryChange', () => {
-            const { path, headerType } = filters;
-            if (!memory[newPath]) {
-                setFilters({
-                    ...filters,
-                    path: newPath,
-                    headerType: newHeaderType || 'home'
-                })
-            } else {
-                return [filters, setFilters];
-            }
-        })
-    }, [])
-
-
+        window.addEventListener('memoryChange', handleMemoryChange)
+        window.removeEventListener('memoryChange', handleMemoryChange)
+    }, [filters])
 
     return [filters, setFilters];
 }
 
-export default useHeaderchange;
+UseHeaderchange.propTypes = {
+    newPath: PropTypes.string,
+    headerType: PropTypes.string
+}
+
+export default UseHeaderchange;

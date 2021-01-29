@@ -28,8 +28,24 @@ import { contactPageData } from '../actions/contact';
 import TopMostCategories from './top-most-categories';
 import axios from 'axios';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import useGlobals from '../utils/global-functions/use-globals';
+import UseHeaderchange from '../utils/global-functions/use-Header-change';
 
 const Home = () => {
+  const headerInfo = UseHeaderchange();
+  const [filters, setFilters] = headerInfo;
+  const globals = useGlobals();
+  const { location } = globals;
+  let pathname = location && location.pathname.toString();
+  let pathValue = pathname && pathname.substring(pathname.lastIndexOf('/') + 1);
+  useEffect(() => {
+    if (pathname.includes('home')) {
+      setFilters({
+        ...filters,
+        path: 'home',
+      })
+    }
+  }, [])
   const topMostCategories = [
     {
       name: 'MEN',
@@ -68,6 +84,7 @@ const Home = () => {
       component: CategoryC
     }
   ];
+  console.log(filters, window.newMemory, headerInfo);
   return (
     <Fragment>
       <div className='badydiv'>
