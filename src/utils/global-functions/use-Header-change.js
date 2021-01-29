@@ -12,7 +12,7 @@ function UseHeaderchange(newPath, newHeaderType, ...rest) {
         path: '',
         headerType: 'home',
         ...rest
-    }
+    };
     if (!newMemory[newPath]) newMemory[newPath] = initialState;
 
     const [filters, setFilters] = useState(initialState);
