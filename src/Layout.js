@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import Home from './Pages/Home';
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, Switch,Redirect } from 'react-router-dom';
 import { Category } from './Pages/Category';
 import AllProducts from './Pages/AllProducts';
 import { ProductDescription } from './Pages/ProductDescription';
@@ -51,9 +51,9 @@ import { ReferAFriendDetails } from "./Pages/ReferAFriendDetails";
 export const Layout = () => {
     return (
         <Router>
-            <Switch>
-                <Route path='/' component={Home} />
-                {/* <Redirect exact from='/' to='/home' /> */}
+            <Switch>                
+                <Redirect exact from='/' to='/home' />
+                <Route path='/home' component={Home} />
                 <Route exact path='/category' component={Category} />
                 <Route exact path='/allproducts' component={AllProducts} />
                 <Route exact path='/productdescription' component={ProductDescription} />
