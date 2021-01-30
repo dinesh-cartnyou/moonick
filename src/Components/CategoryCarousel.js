@@ -22,18 +22,18 @@ const CategoryCarousel = ({data}) => {
         {/* <div className='row no-gutters'> */}
         {/* <div className='productslder'> */}
         <Slider {...settings}>
-        {
+        {/* {
           data && Object.keys(data).length > 0 && data.map(slider => {
             return(
               <CategoryCard data={slider} />
             )
           })
-        }
-          {/* <CategoryCard />
+        } */}
           <CategoryCard />
           <CategoryCard />
           <CategoryCard />
-          <CategoryCard /> */}
+          <CategoryCard />
+          <CategoryCard />
         </Slider>
         {/* </div> */}
         {/* </div> */}

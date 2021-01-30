@@ -30,9 +30,9 @@ export const ProductCard = (props) => {
             <span className='full-p'>
               <i className='fas fa-rupee-sign' /> 899
             </span>
-            <span className='offp'>50%</span>
+            {/* <span className='offp'>50%</span> */}
           </div>
-          <div
+          {/* <div
             className='rateing text-right'
             style={{
               display: 'flex',
@@ -49,7 +49,7 @@ export const ProductCard = (props) => {
               />{' '}
               <span>4.2</span>
             </p>
-          </div>
+          </div> */}
         </div>
 
       </div>

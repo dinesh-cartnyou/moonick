@@ -21,11 +21,11 @@ export const BannerCarousel = ({data}) => {
       <div className='productslder'>
         <Slider {...settings}>
           {
-            data && data.length > 0 && data.map(banner => {
-              return(
-                <BannerCard id={banner.banner_id} imageUrl={banner.imageUrl}></BannerCard>
-              )
-            }) 
+            // data && data.length > 0 && data.map(banner => {
+            //   return(
+                <BannerCard ></BannerCard>
+              // )
+            // }) 
           }          
         </Slider>
       </div>

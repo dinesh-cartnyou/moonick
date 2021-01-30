@@ -114,7 +114,23 @@ header .humburgermenu .lefts .logo img{width: 5em; padding: .8em 0em;}
   white-space: nowrap;
   overflow: hidden;
 }
-.bodypanelmian .heing h2{font-size: 1em;font-weight: 600; padding: 1em 0em 0em 0em; font-family: 'Roboto Slab', serif;}
+.bodypanelmian .heing h2{
+  /* font-size: 1em;font-weight: 600; padding: 1em 0em 0em 0em; font-family: 'Roboto Slab', serif; */
+    display: block;
+    width: 100%;
+    height: 22px;
+    text-align: center;
+    margin: 0 0 17px;
+    text-transform: uppercase;
+    font-family: montserrat,sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 2px;
+    color: #000;
+}
 .bodypanelmian .flashsale{font-family: 'Open Sans', sans-serif;}
 .bodypanelmian .flashsale .colan .coln{position: relative; bottom: .2em; right: .2em;}
 .bodypanelmian .flashsale .flashslder{overflow: hidden; padding: .0em .5em;}
@@ -129,14 +145,46 @@ header .humburgermenu .lefts .logo img{width: 5em; padding: .8em 0em;}
 .bodypanelmian .flashsale .viewbtn{padding: .2em 0em;}
 .bodypanelmian .flashsale .viewbtn .btn{font-size: 1em;color: #c2172e;font-weight: 600; font-family: 'Roboto Slab', serif;}
 .bodypanelmian .flashsale .txt{text-align: left;}
-.bodypanelmian .flashsale .txt .productn{font-size: .7em; margin-bottom: 0.3em; line-height: 1.3em;}
-.bodypanelmian .flashsale .m-price{font-size: .8em; font-weight: 600; margin-top: .6em; margin-bottom: 0;}
+.bodypanelmian .flashsale .txt .productn{
+  /* font-size: .7em;
+   margin-bottom: 0.3em;
+    line-height: 1.3em; */
+    max-width: 146px;
+    font-size: 11px;
+    font-family: montserrat-medium,sans-serif;
+    text-align: left;
+    color: #0e0e0e;
+    letter-spacing: -.18px;
+    margin-top: 8px;
+    max-height: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.bodypanelmian .flashsale .m-price{
+  /* font-size: .8em; font-weight: 600; margin-top: .6em; margin-bottom: 0; */
+  font-family: montserrat-bold,sans-serif;
+    color: #0e0e0e;
+    text-decoration: none;
+    font-weight: 600;
+    font-size:13px;
+    margin:0!important;
+}
 .bodypanelmian .flashsale .m-price i{font-weight: 600; font-size: .99em; }
-.bodypanelmian .flashsale .full-p{text-decoration: line-through; font-size: .6em;color: #949494; margin: 1.1em .5em;}
+.bodypanelmian .flashsale .full-p{
+  /* text-decoration: line-through; font-size: .6em;color: #949494; margin: 1.1em .5em; */
+  text-decoration: line-through;
+  font-family: montserrat-bold,sans-serif;
+  font-size:13px;
+  margin:0!important;
+}
 .bodypanelmian .flashsale .full-p i{font-weight: 600; font-size: .9em;}
 .bodypanelmian .flashsale .offp{font-size: .6em; font-weight: 600; margin: 1.1em .5em; color: #c2172e; margin-left: 0;}
 .bodypanelmian .flashsale .txt .rateing .rate{background: #c2172e;float: right;color: #fff;  margin-bottom: 0; padding: .2em .4em;font-size: .7em;border-radius: .3em;}
-.bodypanelmian .flashsale.recetnlyview{background: #e8f5fb; padding-bottom: 1em;}
+.bodypanelmian .flashsale.recetnlyview{
+  /* background: #e8f5fb; */
+  padding-bottom: 1em;
+}
 .bodypanelmian .customtimer .timer{margin: 0em .3em;}
 .bodypanelmian .customtimer .timer .coln{font-weight: 600;}
 .bodypanelmian .customtimer .timer .tm{background: #c2172e;width: 1.5em; color: #fff; font-size: .6em; padding: .1em; border-radius: .2em; margin-bottom: 0;}
@@ -1127,4 +1175,34 @@ input:checked + .slider:before {
 
 body{
   min-height:100vh;
+}
+
+.new-p-name{
+    font-size: 12px!important;
+    font-family: montserrat,sans-serif;
+    font-weight: 700;
+    letter-spacing: .18px;
+    margin-top: 6px;
+}
+
+.view-all-btn{
+    /* color: #000!important;
+    background-color: transparent!important;
+    text-decoration: none!important;
+    outline: none!important;
+    cursor: pointer!important;
+    transition: color .3s !important;
+    -webkit-text-decoration-skip: objects!important;
+    -ms-touch-action: manipulation!important;
+    touch-action: manipulation!important; */
+
+    font-size: 12px!important;
+    font-family: montserrat-bold,sans-serif!important;
+    color: #42a2a2!important;
+    display: block!important;
+    margin: 10px auto!important;
+    letter-spacing: -.2px!important;
+    text-decoration: underline!important;
+    text-align: center!important;
+    text-transform: uppercase!important;
 }

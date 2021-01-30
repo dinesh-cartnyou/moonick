@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import { ProductCarousel } from './ProductCarousel';
+import ViewBtn from './view-btn';
 
 export const MobileZone = () => {
   return (
@@ -13,7 +14,7 @@ export const MobileZone = () => {
             <ProductCarousel></ProductCarousel>
           </div>
         </div>
-        <div className='row no-gutters'>
+        {/* <div className='row no-gutters'>
           <div className='col'>
             <div className='viewbtn'>
               <a href='#' className='btn'>
@@ -21,7 +22,8 @@ export const MobileZone = () => {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
+        <ViewBtn />
       </div>
     </Fragment>
   );

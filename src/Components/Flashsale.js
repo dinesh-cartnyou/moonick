@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import { ProductCarousel } from './ProductCarousel';
+import ViewBtn from './view-btn';
 
 export const Flashsale = () => {
   return (
@@ -10,7 +11,7 @@ export const Flashsale = () => {
             <div className='heing'>
               <h2>Flash Sale</h2>
             </div>
-            <div className='d-flex colan justify-content-center'>
+            {/* <div className='d-flex colan justify-content-center'>
               <div className='timer'>
                 <p className='tm'>02</p>
                 <p className='dd'>DD</p>
@@ -30,11 +31,11 @@ export const Flashsale = () => {
                 <p className='tm'>38</p>
                 <p className='dd'>SS</p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         <ProductCarousel></ProductCarousel>
-        <div className='row no-gutters'>
+        {/* <div className='row no-gutters'>
           <div className='col'>
             <div className='viewbtn'>
               <a href='#' style={{ paddingBottom: '0'}} className='btn'>
@@ -42,7 +43,8 @@ export const Flashsale = () => {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
+        <ViewBtn />
       </div>
     </Fragment>
   );

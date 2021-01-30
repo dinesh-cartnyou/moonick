@@ -382,25 +382,25 @@ const NewHome = ({ }) => {
                 <div className='row no-gutters'>
                   <div className='col'>
                     <div className='bodypanel'>
-                      <div className='addbanner'>
+                      {/* <div className='addbanner'>
                         {
-                          // data.data.banners.sale_banner.imageUrl &&
+                          data.data.banners.sale_banner.imageUrl &&
                           <Link >
                             <img src={'image/home/addbtop.png'} className='img-fluid' />
                           </Link>
-                        }
-                      </div>
-                      <BannerCarousel />
+                        } 
+                      </div>  */}
+                      {/* <BannerCarousel /> */}
                       {
                         // data.data.banners.sale_banner && data.data.banners.sale_banner.status &&
-                        <div className='addbanner'>
-                          {
-                            // data.data.banners.sale_banner.imageUrl &&
-                            <Link>
-                              <img src={'image/home/addbtop.png'} className='img-fluid' />
-                            </Link>
-                          }
-                        </div>
+                        // <div className='addbanner'>
+                        //   {
+                        //     // data.data.banners.sale_banner.imageUrl &&
+                        //     <Link>
+                        //       <img src={'image/home/addbtop.png'} className='img-fluid' />
+                        //     </Link>
+                        //   }
+                        // </div>
                       }
                       {
                         // data.data.banners.hero_banners && data.data.banners.hero_banners.length > 0 &&
