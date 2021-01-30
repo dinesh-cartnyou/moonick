@@ -27,23 +27,26 @@ import { homePageData } from '../actions/home-page';
 import { contactPageData } from '../actions/contact';
 import TopMostCategories from './top-most-categories';
 import axios from 'axios';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import useGlobals from '../utils/global-functions/use-globals';
 import UseHeaderchange from '../utils/global-functions/use-Header-change';
 
 const Home = () => {
-  const headerInfo = UseHeaderchange();
-  const [filters, setFilters] = headerInfo;
+  // const headerInfo = UseHeaderchange();
+  // const [filters, setFilters] = headerInfo;
   const globals = useGlobals();
   const { location } = globals;
   let pathname = location && location.pathname.toString();
   let pathValue = pathname && pathname.substring(pathname.lastIndexOf('/') + 1);
+  let headerInfo = pathname.includes('home') && UseHeaderchange(pathname.substr(1));
   useEffect(() => {
     if (pathname.includes('home')) {
-      setFilters({
-        ...filters,
-        path: 'home',
-      })
+      // let headerInfo = UseHeaderchange(pathname);
+      // setFilters({
+      //   ...filters,
+      //   path: 'home',
+      // })
+      console.log(headerInfo, 'headerInfo');
     }
   }, [])
   const topMostCategories = [
@@ -84,7 +87,7 @@ const Home = () => {
       component: CategoryC
     }
   ];
-  console.log(filters, window.newMemory, headerInfo);
+  // console.log(filters, window.newMemory, headerInfo, 'check again');
   return (
     <Fragment>
       <div className='badydiv'>
@@ -95,18 +98,24 @@ const Home = () => {
           <section className='bodypanelmian'>
             <div className='container'>
               <TopMostCategories data={topMostCategories} />
-              <Router>
-                <Switch>
-                  {
-                    topMostCategories && topMostCategories.length > 0 && topMostCategories.map(category => {
-                      console.log(category, 'category');
-                      return (
-                        <Route key={category.key} exact path={category.route} component={category.component} />
-                      )
-                    })
-                  }
-                </Switch>
-              </Router>
+              {/* <Router> */}
+              <Switch>
+                {/* <Route exact path='/home' component={Men} />
+                <Route exact path='/home/women' component={Women} />
+                <Route exact path='/home/accessories' component={Accessories} />
+                <Route exact path='/home/category-A' component={CategoryA} />
+                <Route exact path='/home/category-B' component={CategoryB} />
+                <Route exact path='/home/category-C' component={CategoryC} /> */}
+                {
+                  topMostCategories && topMostCategories.length > 0 && topMostCategories.map(category => {
+                    // console.log(category, 'category');
+                    return (
+                      <Route key={category.key} exact path={category.route} component={category.component} />
+                    )
+                  })
+                }
+              </Switch>
+              {/* </Router> */}
               <Footer />
             </div>
           </section>
@@ -119,7 +128,7 @@ const Home = () => {
 const Men = () => {
   return (
     <div>
-      Hello world 1
+      Hello world 1,Hey you
     </div>
   )
 }
