@@ -27,23 +27,26 @@ import { homePageData } from '../actions/home-page';
 import { contactPageData } from '../actions/contact';
 import TopMostCategories from './top-most-categories';
 import axios from 'axios';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import useGlobals from '../utils/global-functions/use-globals';
 import UseHeaderchange from '../utils/global-functions/use-Header-change';
 
 const Home = () => {
-  const headerInfo = UseHeaderchange();
-  const [filters, setFilters] = headerInfo;
+  // const headerInfo = UseHeaderchange();
+  // const [filters, setFilters] = headerInfo;
   const globals = useGlobals();
   const { location } = globals;
   let pathname = location && location.pathname.toString();
   let pathValue = pathname && pathname.substring(pathname.lastIndexOf('/') + 1);
+  let headerInfo = pathname.includes('home') && UseHeaderchange(pathname.substr(1));
   useEffect(() => {
     if (pathname.includes('home')) {
-      setFilters({
-        ...filters,
-        path: 'home',
-      })
+      // let headerInfo = UseHeaderchange(pathname);
+      // setFilters({
+      //   ...filters,
+      //   path: 'home',
+      // })
+      console.log(headerInfo, 'headerInfo');
     }
   }, [])
   const topMostCategories = [
@@ -51,40 +54,40 @@ const Home = () => {
       name: 'MEN',
       key: 'men',
       route: '/home',
-      component: Men
+      // component: Men
     },
     {
       name: 'WOMEN',
       key: 'women',
       route: '/home/women',
-      component: Women
+      // component: Women
     },
     {
       name: 'ACCESSORIES',
       key: 'accessories',
       route: '/home/accessories',
-      component: Accessories
+      // component: Accessories
     },
     {
       name: 'CATEGORY A',
       key: 'categoryA',
       route: '/home/category-A',
-      component: CategoryA
+      // component: CategoryA
     },
     {
       name: 'CATEGORY B',
       key: 'categoryB',
       route: '/home/category-B',
-      component: CategoryB
+      // component: CategoryB
     },
     {
       name: 'CATEGORY C',
       key: 'categoryC',
       route: '/home/category-C',
-      component: CategoryC
+      // component: CategoryC
     }
   ];
-  console.log(filters, window.newMemory, headerInfo);
+  // console.log(filters, window.newMemory, headerInfo, 'check again');
   return (
     <Fragment>
       <div className='badydiv'>
@@ -95,18 +98,24 @@ const Home = () => {
           <section className='bodypanelmian'>
             <div className='container'>
               <TopMostCategories data={topMostCategories} />
-              <Router>
-                <Switch>
-                  {
-                    topMostCategories && topMostCategories.length > 0 && topMostCategories.map(category => {
-                      console.log(category, 'category');
-                      return (
-                        <Route key={category.key} exact path={category.route} component={category.component} />
-                      )
-                    })
-                  }
-                </Switch>
-              </Router>
+              {/* <Router> */}
+              <Switch>
+                {/* <Route exact path='/home' component={Men} />
+                <Route exact path='/home/women' component={Women} />
+                <Route exact path='/home/accessories' component={Accessories} />
+                <Route exact path='/home/category-A' component={CategoryA} />
+                <Route exact path='/home/category-B' component={CategoryB} />
+                <Route exact path='/home/category-C' component={CategoryC} /> */}
+                {
+                  topMostCategories && topMostCategories.length > 0 && topMostCategories.map(category => {
+                    // console.log(category, 'category');
+                    return (
+                      <Route key={category.key} exact path={category.route} component={NewHome} />
+                    )
+                  })
+                }
+              </Switch>
+              {/* </Router> */}
               <Footer />
             </div>
           </section>
@@ -116,55 +125,55 @@ const Home = () => {
   )
 }
 
-const Men = () => {
-  return (
-    <div>
-      Hello world 1
-    </div>
-  )
-}
+// const Men = () => {
+//   return (
+//     <div>
+//       Hello world 1,Hey you
+//     </div>
+//   )
+// }
 
-const Women = () => {
-  return (
-    <div>
-      Hello world 2
-    </div>
-  )
-}
+// const Women = () => {
+//   return (
+//     <div>
+//       Hello world 2
+//     </div>
+//   )
+// }
 
-const Accessories = () => {
-  return (
-    <div>
-      Hello world 3
-    </div>
-  )
-}
+// const Accessories = () => {
+//   return (
+//     <div>
+//       Hello world 3
+//     </div>
+//   )
+// }
 
-const CategoryA = () => {
-  return (
-    <div>
-      Hello world 4
-    </div>
-  )
-}
+// const CategoryA = () => {
+//   return (
+//     <div>
+//       Hello world 4
+//     </div>
+//   )
+// }
 
-const CategoryB = () => {
-  return (
-    <div>
-      Hello world 5
-    </div>
-  )
-}
+// const CategoryB = () => {
+//   return (
+//     <div>
+//       Hello world 5
+//     </div>
+//   )
+// }
 
-const CategoryC = () => {
-  return (
-    <div>
-      Hello world 6
-    </div>
-  )
-}
+// const CategoryC = () => {
+//   return (
+//     <div>
+//       Hello world 6
+//     </div>
+//   )
+// }
 
-// const Home = ({ homePageData, contactPageData, data, contact }) => {
+// const NewHome = ({ homePageData, contactPageData, data, contact }) => {
 //   // const [data,setData] = useState({});
 //   let settings = {
 //     dot: true,
@@ -314,12 +323,162 @@ const CategoryC = () => {
 //   );
 // };
 
-// Home.propTypes = {
-//   homePageData: PropTypes.func,
-//   contactPageData: PropTypes.func,
-//   home: PropTypes.object,
-//   contact: PropTypes.object
-// };
+const NewHome = ({ }) => {
+  // const [data,setData] = useState({});
+  let settings = {
+    dot: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    cssEase: 'liner'
+  };
+
+  useEffect(() => {
+    // let res = axios.get('https://run.mocky.io/v3/b43c654d-e24b-4400-8359-75ab237aaefa');
+    // res.then(response => {
+    //   console.log(response.data,'response data');
+    //   setData({...response.data});
+    // }).catch(err => {
+    //   console.log(err);
+    // })
+    let res = axios.get('https://mobilenyou.herokuapp.com/products');
+    res.then(response => {
+      console.log(response.data, 'response data');
+    }).catch(err => {
+      console.log(err);
+    })
+  }, [])
+  // const [newData,setNewData] = useState({});
+  useEffect(() => {
+    // homePageData();
+    // contactPageData();
+  }, []);
+
+  // useEffect(() => {    
+  //     let res = axios.get('http://15.206.89.124/supershop/api/getHomeRecord');
+  //     res.then(response => {
+  //       console.log(response.data,'response data');
+  //       setNewData({...response.data})
+  //     }).catch(err => {
+  //       console.log(err);
+  //     })       
+  // },[])
+
+  // console.log(data, data.data, data.error, 'data coming from redux actions', contact, 'contact data');
+  // console.log(data,'new data');
+  return (
+    <Fragment>
+      <div className='badydiv'>
+        <div className='universalDiv'>
+          {/* <div className='container'>
+            <Navbar></Navbar>
+          </div> */}
+          <section className='bodypanelmian'>
+            <div className='container'>
+              {/* <TopMostCategories data={topMostCategories} /> */}
+              {
+                // data && data.data && data.data.banners && Object.keys(data.data).length > 0 && Object.keys(data.data.banners).length &&
+                <div className='row no-gutters'>
+                  <div className='col'>
+                    <div className='bodypanel'>
+                      <div className='addbanner'>
+                        {
+                          // data.data.banners.sale_banner.imageUrl &&
+                          <Link >
+                            <img src={'image/home/addbtop.png'} className='img-fluid' />
+                          </Link>
+                        }
+                      </div>
+                      <BannerCarousel />
+                      {
+                        // data.data.banners.sale_banner && data.data.banners.sale_banner.status &&
+                        <div className='addbanner'>
+                          {
+                            // data.data.banners.sale_banner.imageUrl &&
+                            <Link>
+                              <img src={'image/home/addbtop.png'} className='img-fluid' />
+                            </Link>
+                          }
+                        </div>
+                      }
+                      {
+                        // data.data.banners.hero_banners && data.data.banners.hero_banners.length > 0 &&
+                        <BannerCarousel />
+                      }
+                    </div>
+                  </div>
+                </div>
+              }
+              {
+                // data && data.data && Object.keys(data.data).length > 0 &&
+                <>
+                  {
+                    // (data.data.category || data.data.categories) && (data.data.category.length > 0 || data.data.categories.length > 0) &&
+                    <CategoryCarousel />
+                  }
+                  {/* flash sale sectoin start */}
+                  <Flashsale />
+                  {/* flash sale sectoin end */}
+                  <div className='clearfix' />
+                  {/* Recently viewed start */}
+                  <RecentlyViewed />
+                  {/* Recently viewed  end */}
+                  <PhoneUnderBanner />
+                  {/* Phone Under section */}
+                  {/* offer banner 1 */}
+                  <SingleBanner />
+                  {/* offer banner 1 */}
+                  {/* Mobile Zone */}
+                  <MobileZone />
+                  {/* Mobile Zone*/}
+                  {/* offer banner 2 */}
+                  {/* Add banner4 */}
+                  <DoubleBanner />
+                  {/* offer banner 2 */}
+                  {/* tablet Zone */}
+                  <TabletZone />
+                  {/* Tablet Zone*/}
+                  {/* Add banner4 */}
+                  <TrippleBanner />
+                  {/* Add banner*/}
+                  {/* Accessories  Zone */}
+                  <AccessoriesZone />
+                  {/* Accessories  Zone*/}
+                  <div className='clearfix' />
+                  {/* Mobile Accessories Product */}
+                  <BottomCategories />
+                  {/* Mobile Accessories Product */}
+                  {/* Add banner4 */}
+                  <TrippleBanner />
+                  {/* Add banner*/}
+                  {/* Category X */}
+                  <CategoryX />
+                  {/*Category X*/}
+                  {/* Brands Section*/}
+                  {/* <Brands /> */}
+                  {/* Brands Section*/}
+                </>
+              }
+              {/* {
+                contact && contact.data && Object.keys(contact.data).length > 0 &&
+                <Footer data={contact.data} />
+              } */}
+            </div>
+            {/* Main container and section close */}
+          </section>
+        </div>
+      </div>
+    </Fragment>
+  );
+};
+
+NewHome.propTypes = {
+  homePageData: PropTypes.func,
+  contactPageData: PropTypes.func,
+  home: PropTypes.object,
+  contact: PropTypes.object
+};
 
 const mapStateToProps = state => ({
   data: state.home,

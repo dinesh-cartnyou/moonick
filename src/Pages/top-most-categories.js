@@ -28,7 +28,7 @@ function TopMostCategories({ data }) {
                         data.map(data => {
                             let routeName = data && data.route && data.route.toString();
                             let routeValue = routeName && routeName.substring(routeName.lastIndexOf('/') + 1);
-                            console.log(pathname, pathValue, data.route, 'data', routeValue, routeName);
+                            // console.log(pathname, pathValue, data.route, 'data', routeValue, routeName);
                             return (
                                 <li key={data.key} className={(pathValue === routeValue) ? 'active list-item' : 'list-item'}>
                                     <Link to={{ pathname: data.route, state: location.state }}>
@@ -40,7 +40,7 @@ function TopMostCategories({ data }) {
                     }
                 </ul>
             }
-        </div >
+        </div>
     )
 }
 

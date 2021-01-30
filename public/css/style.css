@@ -1124,3 +1124,7 @@ input:checked + .slider:before {
   color:white !important;
   background-color:#c2172e !important;
 }
+
+body{
+  min-height:100vh;
+}
