@@ -456,7 +456,7 @@ const NewHome = ({ }) => {
                   <CategoryX />
                   {/*Category X*/}
                   {/* Brands Section*/}
-                  {/* <Brands /> */}
+                  <Brands />
                   {/* Brands Section*/}
                 </>
               }
