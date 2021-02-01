@@ -9,7 +9,7 @@ export const MobileZone = () => {
         <div className='row no-gutters'>
           <div className='col'>
             <div className='heing'>
-              <h2>Mobile Zone</h2>
+              <h2>TRENDING</h2>
             </div>
             <ProductCarousel></ProductCarousel>
           </div>

@@ -5,7 +5,7 @@ export const PhoneUnderCard = () => {
     <Fragment>
       <div className='col-6'>
         <div className='imgbox'>
-          <img src='image/phone-under/img1.jpg' className='img-fluid' />
+          <img src={'https://images.bewakoof.com/uploads/grid/app/bewakoof-promotional-banner-2x-collaboration-store-1602150544.jpg' || 'image/phone-under/img1.jpg'} className='img-fluid' />
         </div>
       </div>
     </Fragment>

@@ -9,7 +9,7 @@ export const TabletZone = () => {
         <div className='row no-gutters'>
           <div className='col'>
             <div className='heing'>
-              <h2>Tablet Zone</h2>
+              <h2>WHAT'S NEW</h2>
             </div>
             <ProductCarousel></ProductCarousel>
           </div>

@@ -16,18 +16,26 @@
     max-width: 100%;
     overflow-x: scroll;
     overflow-y: hidden;
+    border-bottom: 1px solid #ddd;
+
     .list-item {
       padding: 10px 15px 8px 15px;
+
       &.active {
-        border-bottom: 2px solid blue;
+        border-bottom: 2px solid #000;
+
         a {
-          color: blue;
-          font-weight: bold;
+          color: #000;
+          font-weight: 900;
+          font-size: 12px;
+          display: inline-block;
         }
       }
     }
+
     a {
       white-space: nowrap;
+      font-size: 12px;
     }
   }
 }

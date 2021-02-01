@@ -1,0 +1,11 @@
+:root {
+    --header-height: 65px;
+}
+
+.content-height {
+    height: calc(100% - var(--header-height));
+}
+
+body {
+    height: 100vh;
+}

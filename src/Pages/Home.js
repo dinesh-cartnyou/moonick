@@ -92,10 +92,10 @@ const Home = () => {
     <Fragment>
       <div className='badydiv'>
         <div className='universalDiv'>
-          <div className='container'>
+          <div className='container main-header-div'>
             <Navbar />
           </div>
-          <section className='bodypanelmian'>
+          <section className='bodypanelmian other-section-div'>
             <div className='container'>
               <TopMostCategories data={topMostCategories} />
               {/* <Router> */}
@@ -369,20 +369,20 @@ const NewHome = ({ }) => {
   // console.log(data,'new data');
   return (
     <Fragment>
-      <div className='badydiv'>
-        <div className='universalDiv'>
-          {/* <div className='container'>
+      {/* <div className='badydiv'> */}
+      {/* <div className='universalDiv'> */}
+      {/* <div className='container'>
             <Navbar></Navbar>
           </div> */}
-          <section className='bodypanelmian'>
-            <div className='container'>
-              {/* <TopMostCategories data={topMostCategories} /> */}
-              {
-                // data && data.data && data.data.banners && Object.keys(data.data).length > 0 && Object.keys(data.data.banners).length &&
-                <div className='row no-gutters'>
-                  <div className='col'>
-                    <div className='bodypanel'>
-                      {/* <div className='addbanner'>
+      {/* <section className='bodypanelmian'> */}
+      {/* <div className='container'> */}
+      {/* <TopMostCategories data={topMostCategories} /> */}
+      {
+        // data && data.data && data.data.banners && Object.keys(data.data).length > 0 && Object.keys(data.data.banners).length &&
+        <div className='row no-gutters'>
+          <div className='col'>
+            <div className='bodypanel'>
+              {/* <div className='addbanner'>
                         {
                           data.data.banners.sale_banner.imageUrl &&
                           <Link >
@@ -390,85 +390,121 @@ const NewHome = ({ }) => {
                           </Link>
                         } 
                       </div>  */}
-                      {/* <BannerCarousel /> */}
-                      {
-                        // data.data.banners.sale_banner && data.data.banners.sale_banner.status &&
-                        // <div className='addbanner'>
-                        //   {
-                        //     // data.data.banners.sale_banner.imageUrl &&
-                        //     <Link>
-                        //       <img src={'image/home/addbtop.png'} className='img-fluid' />
-                        //     </Link>
-                        //   }
-                        // </div>
-                      }
-                      {
-                        // data.data.banners.hero_banners && data.data.banners.hero_banners.length > 0 &&
-                        <BannerCarousel />
-                      }
+              {
+                <Link >
+                  <img src={'https://images.bewakoof.com/uploads/grid/app/bewakoof-cotm-color-of-the-month-arcade-green-online-fashion-shopping-HERO-MEN-launch-min-1612114299.gif' || 'image/home/addbtop.png'} className='img-fluid' />
+                </Link>
+              }
+              {/* <BannerCarousel /> */}
+              {
+                // data.data.banners.sale_banner && data.data.banners.sale_banner.status &&
+                // <div className='addbanner'>
+                //   {
+                //     // data.data.banners.sale_banner.imageUrl &&
+                //     <Link>
+                //       <img src={'image/home/addbtop.png'} className='img-fluid' />
+                //     </Link>
+                //   }
+                // </div>
+              }
+              {
+                <Flashsale />
+              }
+              {
+                // data.data.banners.hero_banners && data.data.banners.hero_banners.length > 0 &&
+                <BannerCarousel />
+              }
+            </div>
+          </div>
+        </div>
+      }
+      {
+        // data && data.data && Object.keys(data.data).length > 0 &&
+        <>
+          {
+            // (data.data.category || data.data.categories) && (data.data.category.length > 0 || data.data.categories.length > 0) &&
+            <CategoryCarousel />
+          }
+          {/* flash sale sectoin start */}
+
+          {/* flash sale sectoin end */}
+          <div className='clearfix' />
+          {/* Recently viewed start */}
+          <RecentlyViewed />
+          {/* Recently viewed  end */}
+          <PhoneUnderBanner />
+          {/* Phone Under section */}
+          {/* offer banner 1 */}
+          <SingleBanner />
+          {/* offer banner 1 */}
+          {/* Mobile Zone */}
+          <MobileZone />
+          {/* Mobile Zone*/}
+          {/* offer banner 2 */}
+          {/* Add banner4 */}
+          <DoubleBanner />
+          {/* offer banner 2 */}
+          {/* tablet Zone */}
+          <TabletZone />
+          {/* Tablet Zone*/}
+          {/* Add banner4 */}
+          <TrippleBanner />
+          {/* Add banner*/}
+          {/* Accessories  Zone */}
+          <AccessoriesZone />
+          {/* Accessories  Zone*/}
+          <div className='clearfix' />
+          {
+            <div className='offer-zone'>
+              <div className='container'>
+                <div className='heing'>
+                  <h2>Offer Zone</h2>
+                </div>
+                <div className='offers-info'>
+                  <div className='row no-gutters'>
+                    <div className='col-4'>
+                      <div className='content'>
+                        <img className='img-fluid' src='http://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/retaillabs/2021/2/1/6e325b3b-8745-4ac2-beb4-08c217a294bc1612151902015-flat-60.jpg' alt='offer-1' />
+                      </div>
+                    </div>
+                    <div className='col-4'>
+                      <div className='content'>
+                        <img className='img-fluid' src='http://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/retaillabs/2021/1/28/5a5e167e-58b7-4fa5-aed7-f59fa1f73c7a1611811026600-2--3-.jpg' alt='offer-1' />
+                      </div>
+                    </div>
+                    <div className='col-4'>
+                      <div className='content'>
+                        <img className='img-fluid' src='http://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/retaillabs/2021/1/28/2febd538-1ce2-4807-8525-89e2781ebd2d1611810931241-3--4-.jpg' alt='offer-1' />
+                      </div>
                     </div>
                   </div>
                 </div>
-              }
-              {
-                // data && data.data && Object.keys(data.data).length > 0 &&
-                <>
-                  {
-                    // (data.data.category || data.data.categories) && (data.data.category.length > 0 || data.data.categories.length > 0) &&
-                    <CategoryCarousel />
-                  }
-                  {/* flash sale sectoin start */}
-                  <Flashsale />
-                  {/* flash sale sectoin end */}
-                  <div className='clearfix' />
-                  {/* Recently viewed start */}
-                  <RecentlyViewed />
-                  {/* Recently viewed  end */}
-                  <PhoneUnderBanner />
-                  {/* Phone Under section */}
-                  {/* offer banner 1 */}
-                  <SingleBanner />
-                  {/* offer banner 1 */}
-                  {/* Mobile Zone */}
-                  <MobileZone />
-                  {/* Mobile Zone*/}
-                  {/* offer banner 2 */}
-                  {/* Add banner4 */}
-                  <DoubleBanner />
-                  {/* offer banner 2 */}
-                  {/* tablet Zone */}
-                  <TabletZone />
-                  {/* Tablet Zone*/}
-                  {/* Add banner4 */}
-                  <TrippleBanner />
-                  {/* Add banner*/}
-                  {/* Accessories  Zone */}
-                  <AccessoriesZone />
-                  {/* Accessories  Zone*/}
-                  <div className='clearfix' />
-                  {/* Mobile Accessories Product */}
-                  <BottomCategories />
-                  {/* Mobile Accessories Product */}
-                  {/* Add banner4 */}
-                  <TrippleBanner />
-                  {/* Add banner*/}
-                  {/* Category X */}
-                  <CategoryX />
-                  {/*Category X*/}
-                  {/* Brands Section*/}
-                  <Brands />
-                  {/* Brands Section*/}
-                </>
-              }
-              {/* {
+              </div>
+            </div>
+          }
+          {/* Mobile Accessories Product */}
+          <BottomCategories />
+          {/* Mobile Accessories Product */}
+          {/* Add banner4 */}
+          <TrippleBanner />
+          {/* Add banner*/}
+          {/* Category X */}
+          <CategoryX />
+          {/*Category X*/}
+          {/* Brands Section*/}
+          <Brands />
+          {/* Brands Section*/}
+        </>
+      }
+      {/* {
                 contact && contact.data && Object.keys(contact.data).length > 0 &&
                 <Footer data={contact.data} />
               } */}
-            </div>
-            {/* Main container and section close */}
-          </section>
-        </div>
-      </div>
+      {/* </div> */}
+      {/* Main container and section close */}
+      {/* </section> */}
+      {/* </div>
+      </div> */}
     </Fragment>
   );
 };

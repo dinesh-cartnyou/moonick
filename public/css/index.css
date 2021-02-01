@@ -1,0 +1,39 @@
+.outer-div-slider {
+    display: flex;
+    overflow-x: scroll;
+    width: 100%;
+}
+
+.inner-swiper-slider {
+    min-width: 100%;
+}
+
+#root {
+    height: 100%;
+}
+
+.badydiv,
+.universalDiv {
+    height: 100%;
+}
+
+.main-header-div {
+    height: var(--header-height);
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    z-index: 1000;
+}
+
+.other-section-div {
+    height: calc(100% - var(--header-height));
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}

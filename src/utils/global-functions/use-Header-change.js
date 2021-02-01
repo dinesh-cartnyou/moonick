@@ -56,6 +56,63 @@ UseHeaderchange.propTypes = {
 
 export default UseHeaderchange;
 
+
+// function UseHeaderchange(newPath, headerData) {
+//     if (!window['newMemory']) {
+//         window['newMemory'] = {};
+//         const event =  new Event('changeOccur');
+//         console.log('new memory', window['newMemory']);
+//     }
+
+//     const { newMemory } = window;
+
+//     const [filters, setFilters] = useState({});
+
+//     const { newHeaderType,headerValue } = headerData; 
+
+//     if(!isNotEmptyObject(newMemory)) {
+//         const initialState = {
+//              path: newPath,
+//              headerData
+//         };
+//         setFilters({ ...initialState });
+//     }    
+
+//     if (!newMemory[newPath]) newMemory[newPath] = { ...initialState };
+
+//     let handleMemoryChange = useCallback(() => {
+//         const { path, headerData } = filters;
+//         if (!newMemory[newPath]) {
+//             newMemory[newPath] = { ...initialState };
+//             setFilters({
+//                 ...filters,
+//                 path: newPath,
+//                 headerType: newHeaderType || 'home'
+//             })
+//             setFilters({ ...initialState });
+//             console.log(newMemory, initialState, 'state');
+//         } else {
+//             console.log(newMemory, 'state', '1');
+//             return { ...newMemory[newPath] };
+//         }
+//     }, [])
+
+//     useEffect(() => {
+//         window.addEventListener('changeOccur', handleMemoryChange)
+//         return window.removeEventListener('changeOccur', handleMemoryChange)
+//     }, [handleMemoryChange])
+//     console.log(newMemory, 'state', '2');
+//     return { ...newMemory[newPath] };
+// }
+
+// UseHeaderchange.propTypes = {
+//     newPath: PropTypes.string,
+//     headerType: PropTypes.string
+// }
+
+// export default UseHeaderchange;
+
+
 // import React, { useState, useEffect, useCallback } from 'react';
 // import PropTypes from 'prop-types';
 

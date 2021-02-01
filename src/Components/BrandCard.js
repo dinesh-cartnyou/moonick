@@ -8,50 +8,50 @@ export const BrandCard = ({ data }) => {
         <>
           <div id={'id' || data.brand_id} className='col-3'>
             <div className='brandbox m-2'>
-              <img src={'image/brands/Micromax.png' || data.imageUrl} className='w-100 img-fluid' />
-              <p class="pname new-p-name mt-2">Realme</p>
+              <img src={'https://modernleathergoods.com/wp-content/uploads/2020/06/gucci-logo-1.jpg' || 'image/brands/Micromax.png' || data.imageUrl} className='w-100 img-fluid' />
+              <p class="pname new-p-name mt-2">GUCCI</p>
             </div>
           </div>
           <div id={'id' || data.brand_id} className='col-3'>
             <div className='brandbox m-2'>
-              <img src={'image/brands/Micromax.png' || data.imageUrl} className='w-100 img-fluid' />
-              <p class="pname new-p-name mt-2">Realme</p>
+              <img src={'https://modernleathergoods.com/wp-content/uploads/2020/06/gucci-logo-1.jpg' || 'image/brands/Micromax.png' || data.imageUrl} className='w-100 img-fluid' />
+              <p class="pname new-p-name mt-2">GUCCI</p>
             </div>
           </div>
           <div id={'id' || data.brand_id} className='col-3'>
             <div className='brandbox m-2'>
-              <img src={'image/brands/Micromax.png' || data.imageUrl} className='w-100 img-fluid' />
-              <p class="pname new-p-name mt-2">Realme</p>
+              <img src={'https://modernleathergoods.com/wp-content/uploads/2020/06/gucci-logo-1.jpg' || 'image/brands/Micromax.png' || data.imageUrl} className='w-100 img-fluid' />
+              <p class="pname new-p-name mt-2">GUCCI</p>
             </div>
           </div>
           <div id={'id' || data.brand_id} className='col-3'>
             <div className='brandbox m-2'>
-              <img src={'image/brands/Micromax.png' || data.imageUrl} className='w-100 img-fluid' />
-              <p class="pname new-p-name mt-2">Realme</p>
+              <img src={'https://modernleathergoods.com/wp-content/uploads/2020/06/gucci-logo-1.jpg' || 'image/brands/Micromax.png' || data.imageUrl} className='w-100 img-fluid' />
+              <p class="pname new-p-name mt-2">GUCCI</p>
             </div>
           </div>
           <div id={'id' || data.brand_id} className='col-3'>
             <div className='brandbox m-2'>
-              <img src={'image/brands/Micromax.png' || data.imageUrl} className='w-100 img-fluid' />
-              <p class="pname new-p-name mt-2">Realme</p>
+              <img src={'https://modernleathergoods.com/wp-content/uploads/2020/06/gucci-logo-1.jpg' || 'image/brands/Micromax.png' || data.imageUrl} className='w-100 img-fluid' />
+              <p class="pname new-p-name mt-2">GUCCI</p>
             </div>
           </div>
           <div id={'id' || data.brand_id} className='col-3'>
             <div className='brandbox m-2'>
-              <img src={'image/brands/Micromax.png' || data.imageUrl} className='w-100 img-fluid' />
-              <p class="pname new-p-name mt-2">Realme</p>
+              <img src={'https://modernleathergoods.com/wp-content/uploads/2020/06/gucci-logo-1.jpg' || 'image/brands/Micromax.png' || data.imageUrl} className='w-100 img-fluid' />
+              <p class="pname new-p-name mt-2">GUCCI</p>
             </div>
           </div>
           <div id={'id' || data.brand_id} className='col-3'>
             <div className='brandbox m-2'>
-              <img src={'image/brands/Micromax.png' || data.imageUrl} className='w-100 img-fluid' />
-              <p class="pname new-p-name mt-2">Realme</p>
+              <img src={'https://modernleathergoods.com/wp-content/uploads/2020/06/gucci-logo-1.jpg' || 'image/brands/Micromax.png' || data.imageUrl} className='w-100 img-fluid' />
+              <p class="pname new-p-name mt-2">GUCCI</p>
             </div>
           </div>
           <div id={'id' || data.brand_id} className='col-3'>
             <div className='brandbox m-2'>
-              <img src={'image/brands/Micromax.png' || data.imageUrl} className='w-100 img-fluid' />
-              <p class="pname new-p-name mt-2">Realme</p>
+              <img src={'https://modernleathergoods.com/wp-content/uploads/2020/06/gucci-logo-1.jpg' || 'image/brands/Micromax.png' || data.imageUrl} className='w-100 img-fluid' />
+              <p class="pname new-p-name mt-2">GUCCI</p>
             </div>
           </div>
         </>

@@ -138,7 +138,7 @@ export const Navbar = () => {
                 </div>
               </div>
               <div className='head'>
-                <div className='lefts'>
+                <div className='lefts h-100'>
                   <a href='#' className='openMenu'>
                     {' '}
                     <img
@@ -146,9 +146,9 @@ export const Navbar = () => {
                       className='hambur'
                     />{' '}
                   </a>
-                  <div className='logo'>
+                  <div className='logo h-100 d-flex'>
                     {' '}
-                    <img src='image/header/logo.gif' />{' '}
+                    <img className='p-0 ml-2 moonick-image align-self-center' src='image/header/moonick.png' />{' '}
                   </div>
                 </div>
                 <div className='float-right'>

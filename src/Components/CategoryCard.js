@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 
-export const CategoryCard = ({ data }) => {
+export const CategoryCard = ({ data, image, categoryName }) => {
   return (
     <Fragment>
       {
@@ -10,12 +10,12 @@ export const CategoryCard = ({ data }) => {
           <div className='categbox'>
             <div className='img-bg'>
               <img
-                src='image/home/categ/img4.png'
-                className='img-fluid'
+                src={image || 'https://images.bewakoof.com/uploads/grid/app/bewakoof-online-fashion-COTM-arced-green-msite-highlight-box-1612088826.jpg' || 'image/home/categ/img4.png'}
+                className='img-fluid mx-auto'
                 alt='Speakers'
               />
             </div>
-            <p >{'Cars' || data.category_name}</p>
+            <p >{categoryName || 'Design of the day' || data.category_name}</p>
           </div>
         </div>
       }
@@ -24,6 +24,8 @@ export const CategoryCard = ({ data }) => {
 };
 
 CategoryCard.propTypes = {
-  data: PropTypes.array
+  data: PropTypes.array,
+  image: PropTypes.string,
+  categoryName: PropTypes.string
 };
 

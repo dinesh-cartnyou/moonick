@@ -11,7 +11,7 @@ export const Flashsale = () => {
             <div className='heing'>
               <h2>Flash Sale</h2>
             </div>
-            {/* <div className='d-flex colan justify-content-center'>
+            <div className='d-flex colan justify-content-center'>
               <div className='timer'>
                 <p className='tm'>02</p>
                 <p className='dd'>DD</p>
@@ -31,7 +31,7 @@ export const Flashsale = () => {
                 <p className='tm'>38</p>
                 <p className='dd'>SS</p>
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
         <ProductCarousel></ProductCarousel>
