@@ -5,7 +5,7 @@ export const StickyFooter = () => {
     <Fragment>
       <div className='stckyfooter'>
         <div>
-          <ul className='d-flex justify-content-center'>
+          <ul className='d-flex justify-content-center align-items-center'>
             <li>
               <span className='wp'>
                 <i className='fab fa-whatsapp' />
@@ -16,9 +16,9 @@ export const StickyFooter = () => {
                 <i className='fas fa-shopping-cart' />
               </span>
             </li>
-            <li>
-              <span>
-                <button type='button' className='btn btn-default'>
+            <li className='flex-grow-1'>
+              <span classname='d-inline-block w-100'>
+                <button type='button' className='btn footer-button w-100 '>
                   <i className='fas fa-bolt' /> Buy Now
                 </button>{' '}
               </span>

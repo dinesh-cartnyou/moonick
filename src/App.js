@@ -4,10 +4,9 @@ import setAuthToken from './utils/setAuthToken';
 
 import { Provider } from 'react-redux';
 import store from './store';
-import UseHeaderchange from './utils/global-functions/use-Header-change';
 
 function App() {
-
+  console.log('check to chnage');
   useEffect(() => {
     if (localStorage.token) {
       setAuthToken(localStorage.token);

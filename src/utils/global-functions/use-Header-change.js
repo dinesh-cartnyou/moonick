@@ -2,9 +2,10 @@ import React, { useState, useEffect, useCallback } from 'react';
 import PropTypes from 'prop-types';
 import { isNotEmptyObject } from './index';
 
-function UseHeaderchange(newPath, newHeaderType, ...rest) {
+function UseHeaderchange({newPath, newHeaderType, ...rest}) {
     if (!window['newMemory']) {
         window['newMemory'] = {};
+        const event = new Event('changeGrid');
         console.log('new memory', window['newMemory']);
     }
 
@@ -18,13 +19,14 @@ function UseHeaderchange(newPath, newHeaderType, ...rest) {
         ...rest
     };
 
-    if(!isNotEmptyObject(filters)) {
+    if (!isNotEmptyObject(filters)) {
         setFilters({ ...initialState });
-    }    
+    }
 
     if (!newMemory[newPath]) newMemory[newPath] = { ...initialState };
 
     let handleMemoryChange = useCallback(() => {
+        console.log('handleMemoryChange isworking');
         const { path, headerType } = filters;
         if (!newMemory[newPath]) {
             newMemory[newPath] = { ...initialState };
@@ -42,8 +44,8 @@ function UseHeaderchange(newPath, newHeaderType, ...rest) {
     }, [])
 
     useEffect(() => {
-        window.addEventListener('memoryChange', handleMemoryChange)
-        return window.removeEventListener('memoryChange', handleMemoryChange)
+        window.addEventListener('changeGrid', handleMemoryChange)
+        return window.removeEventListener('changeGrid', handleMemoryChange)
     }, [handleMemoryChange])
     console.log(newMemory, 'state', '2');
     return { ...newMemory[newPath] };
@@ -70,15 +72,19 @@ export default UseHeaderchange;
 
 //     const { newHeaderType,headerValue } = headerData; 
 
-//     if(!isNotEmptyObject(newMemory)) {
+//     if(!isNotEmptyObject(newMemory) && newPath && headerData) {
 //         const initialState = {
 //              path: newPath,
 //              headerData
 //         };
-//         setFilters({ ...initialState });
+//         newMemory[newPath] = { ...initialState }
+//         return setFilters({ ...initialState });
 //     }    
 
-//     if (!newMemory[newPath]) newMemory[newPath] = { ...initialState };
+//     if (isNotEmptyObject(newMemory) && !newMemory[newPath]) newMemory[newPath] = { ...initialState };
+//     else{
+
+//     } 
 
 //     let handleMemoryChange = useCallback(() => {
 //         const { path, headerData } = filters;

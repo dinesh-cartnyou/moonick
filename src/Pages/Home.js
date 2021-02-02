@@ -353,6 +353,8 @@ const NewHome = ({ }) => {
   useEffect(() => {
     // homePageData();
     // contactPageData();
+    const event = new Event('changeGrid');
+    window.dispatchEvent(event)
   }, []);
 
   // useEffect(() => {    

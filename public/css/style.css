@@ -2399,7 +2399,8 @@ footer .collapsemoreabout .heading i {
 .reviewrating .user-review .blank_user {
   width: 75px;
   height: 75px;
-  border: 2px solid #c2172e;
+  /* border: 2px solid #c2172e; */
+  border: 2px solid #000;
   border-radius: 50%;
   position: relative;
 }
@@ -2417,7 +2418,8 @@ footer .collapsemoreabout .heading i {
   transform: translate(-50%, -50%);
   font-size: 1.5em;
   font-weight: 600;
-  color: #c2172e;
+  /* color: #c2172e; */
+  color: #000;
 }
 
 .reviewrating .user-review .tolrate .pp {
@@ -2863,17 +2865,18 @@ footer .collapsemoreabout .heading i {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #c2172e;
+  background: #fff;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #941c2c;
+  /* background: #941c2c; */
+  background: #000;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: blue;
+  background: #000;
 }
 
 ::placeholder {
