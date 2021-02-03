@@ -110,11 +110,7 @@ const Home = () => {
                   topMostCategories && topMostCategories.length > 0 && topMostCategories.map(category => {
                     // console.log(category, 'category');
                     return (
-<<<<<<< HEAD
-                      <Route key={category.key} exact path={category.route} component={category.component} />
-=======
                       <Route key={category.key} exact path={category.route} component={NewHome} />
->>>>>>> dev-dinesh-new
                     )
                   })
                 }
@@ -129,15 +125,6 @@ const Home = () => {
   )
 }
 
-<<<<<<< HEAD
-const Men = () => {
-  return (
-    <div>
-      Hello world 1,Hey you
-    </div>
-  )
-}
-=======
 // const Men = () => {
 //   return (
 //     <div>
@@ -145,7 +132,6 @@ const Men = () => {
 //     </div>
 //   )
 // }
->>>>>>> dev-dinesh-new
 
 // const Women = () => {
 //   return (
