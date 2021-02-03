@@ -5,4 +5,8 @@
 node_modules
 dist
 build
+<<<<<<< HEAD
 package-lock.json
+=======
+package-lock.json
+>>>>>>> c9345d0cb1d6b8499350c221c6dc1d3cb850832b
