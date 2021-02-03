@@ -5,7 +5,7 @@ export const SingleBanner = () => {
     <div className='offer'>
       <div className='row no-gutters'>
         <div className='col'>
-          <img src='image/home/offer1.png' className='img-fluid' />
+          <img src={'https://images.bewakoof.com/uploads/grid/app/bewakoof-online-fashion-dotd-banner-1611318853.jpg' || 'image/home/offer1.png'} className='img-fluid' />
         </div>
       </div>
     </div>

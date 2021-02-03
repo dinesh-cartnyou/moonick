@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import { ProductCarousel } from './ProductCarousel';
+import ViewBtn from './view-btn';
 
 export const CategoryX = () => {
   return (
@@ -13,7 +14,7 @@ export const CategoryX = () => {
             <ProductCarousel></ProductCarousel>
           </div>
         </div>
-        <div className='row no-gutters' style={{marginBottom:"1.5rem"}}>
+        {/* <div className='row no-gutters' style={{marginBottom:"1.5rem"}}>
           <div className='col'>
             <div className='viewbtn'>
               <a href='#' className='btn'>
@@ -21,7 +22,8 @@ export const CategoryX = () => {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
+        <ViewBtn />
       </div>
     </Fragment>
   );

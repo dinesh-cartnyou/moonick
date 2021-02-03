@@ -10,7 +10,7 @@ export const ProductCarousel = () => {
     dot: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: 3,
     slidesToScroll: 1,
     cssEase: 'liner'
   };

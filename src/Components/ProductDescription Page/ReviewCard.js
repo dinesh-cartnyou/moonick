@@ -8,7 +8,7 @@ export const ReviewCard = () => {
           <span className='username'>N</span>
         </div>
         <div className='tolrate'>
-          <span className='pp'>
+          <span className='pp red-bg'>
             <a href='#' className='star'>
               ★
             </a>{' '}

@@ -1,10 +1,11 @@
 import React, { Fragment } from 'react';
 import { ProductCarousel } from './ProductCarousel';
+import ViewBtn from './view-btn';
 
 export const AccessoriesZone = () => {
   return (
     <Fragment>
-      <div className='flashsale' style={{marginTop:"-1.5rem"}}>
+      <div className='flashsale' style={{ marginTop: "-1.5rem" }}>
         <div className='row no-gutters'>
           <div className='col'>
             <div className='heing'>
@@ -13,7 +14,7 @@ export const AccessoriesZone = () => {
             <ProductCarousel></ProductCarousel>
           </div>
         </div>
-        <div className='row no-gutters'>
+        {/* <div className='row no-gutters'>
           <div className='col'>
             <div className='viewbtn'>
               <a href='#' className='btn'>
@@ -21,7 +22,8 @@ export const AccessoriesZone = () => {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
+        <ViewBtn />
       </div>
     </Fragment>
   );

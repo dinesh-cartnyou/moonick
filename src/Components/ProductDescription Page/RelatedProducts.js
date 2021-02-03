@@ -16,7 +16,7 @@ export const RelatedProducts = () => {
         <div className='row no-gutters'>
           <div className='col'>
             <div className='viewbtn'>
-              <a href='#' className='btn'>
+              <a href='#' className='btn black-color'>
                 View All
               </a>
             </div>

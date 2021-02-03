@@ -6,7 +6,7 @@ export const UserReviewCard = () => {
       <div className='ratingview'>
         <div className='top d-flex'>
           <p className='text-left'>
-            <img src='image/rating/r4.svg' /> <span className='fr'>4.0</span>{' '}
+            <img src='image/rating/r4.svg' /> <span className='fr red-color'>4.0</span>{' '}
           </p>
           <p className='float-right'>10-Dec-2019 </p>
         </div>

@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import { ProductCarousel } from './ProductCarousel';
+import ViewBtn from './view-btn';
 
 export const Flashsale = () => {
   return (
@@ -34,7 +35,7 @@ export const Flashsale = () => {
           </div>
         </div>
         <ProductCarousel></ProductCarousel>
-        <div className='row no-gutters'>
+        {/* <div className='row no-gutters'>
           <div className='col'>
             <div className='viewbtn'>
               <a href='#' style={{ paddingBottom: '0'}} className='btn'>
@@ -42,7 +43,8 @@ export const Flashsale = () => {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
+        <ViewBtn />
       </div>
     </Fragment>
   );

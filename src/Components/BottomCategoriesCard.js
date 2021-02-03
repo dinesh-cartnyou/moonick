@@ -6,10 +6,10 @@ export const BottomCategoriesCard = () => {
       <div className='col-3'>
         <div className='pbox'>
           <div className='imgtext'>
-            <img src='image/m-product/img1.png' className='img-fluid' alt='' />
+            <img src={'https://images.bewakoof.com/uploads/grid/app/192x192-Accessories-Socks-1602150296.jpg' || 'image/m-product/img1.png'} className='img-fluid' alt='' />
           </div>
           <p className='p-name'>
-            Power <br /> Banks
+            Power Banks
           </p>
         </div>
       </div>

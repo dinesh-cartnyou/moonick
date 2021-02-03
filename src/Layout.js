@@ -50,57 +50,59 @@ import { ReferAFriendDetails } from "./Pages/ReferAFriendDetails";
 
 export const Layout = () => {
     return (
-        <Router>
-            <Switch>
-                <Redirect exact from='/' to='/home' />
-                <Route path='/home' component={Home} />
-                <Route exact path='/category' component={Category} />
-                <Route exact path='/allproducts' component={AllProducts} />
-                <Route exact path='/productdescription' component={ProductDescription} />
-                <Route exact path='/aboutseller' component={AboutSeller} />
-                <Route exact path='/productvariants' component={Variants} />
-                <Route exact path='/productspecifications' component={Specifications} />
-                <Route exact path='/ordersummary' component={OrderSummary} />
-                <Route exact path='/emioptions' component={EmiOptions} />
-                <Route exact path='/onepagecheckout' component={OnePageCheckout} />
-                <Route exact path='/login' component={Login} />
-                <Route exact path='/Otp' component={Otp} />
-                <Route exact path='/SignIn' component={SignIn} />
-                <Route exact path='/signup' component={SignUp} />
-                <Route exact path='/review' component={Review} />
-                <Route exact path='/Allreview' component={Allreview} />
-                <Route exact path='/Emptycart' component={Emptycart} />
-                <Route exact path='/Transactionerror' component={Transactionerror} />
-                <Route exact path='/Orderplaced' component={Orderplaced} />
-                <Route exact path='/Cart' component={Cart} />
-                <Route exact path='/address' component={Address} />
-                <Route exact path='/checkoutpage' component={CheckoutPage} />
-                <Route exact path='/flashsale' component={FlashSalePage} />
-                <Route exact path='/customeraddress' component={CustomerAddress} />
-                <Route exact path='/account' component={Account} />
-                <Route exact path='/changepassword' component={Password} />
-                <Route exact path='/wallet' component={Wallet} />
-                <Route exact path='/profile' component={Profile} />
-                <Route exact path='/wishlist' component={Wishlist} />
-                <Route exact path='/emptywishlist' component={EmptyWishlist} />
-                <Route exact path='/orderslist' component={OrdersList} />
-                <Route exact path='/orderdetails' component={OrderDetails} />
-                <Route exact path='/submitreview' component={SubmitReview} />
-                <Route exact path='/cancellationrequest' component={CancellationRequest} />
-                <Route exact path='/cancellationconfirmed' component={CancellationConfirmed} />
-                <Route exact path='/supportcenterissues' component={SupportCenterIssues} />
-                <Route exact path='/supportcenter' component={SupportCenter} />
-                <Route exact path='/returnrequest' component={ReturnRequest} />
-                <Route exact path='/contactus' component={ContactUs} />
-                <Route exact path='/supportcenterqueries' component={SupportCenterQueries} />
-                <Route exact path='/blogname' component={BlogName} />
-                <Route exact path='/blog' component={Blog} />
-                <Route exact path='/privacypolicy' component={PrivacyPolicy} />
-                <Route exact path='/career' component={Career} />
-                <Route exact path='/businessintelligence' component={BusinessIntelligence} />
-                <Route exact path='/referafriend' component={ReferAFriend} />
-                <Route exact path='/referafrienddetails' component={ReferAFriendDetails} />
-            </Switch>
-        </Router>
+        <>
+            <Router>
+                <Switch>
+                    <Redirect exact from='/' to='/home' />
+                    <Route path='/home' component={Home} />
+                    <Route exact path='/category' component={Category} />
+                    <Route exact path='/allproducts' component={AllProducts} />
+                    <Route exact path='/productdescription' component={ProductDescription} />
+                    <Route exact path='/aboutseller' component={AboutSeller} />
+                    <Route exact path='/productvariants' component={Variants} />
+                    <Route exact path='/productspecifications' component={Specifications} />
+                    <Route exact path='/ordersummary' component={OrderSummary} />
+                    <Route exact path='/emioptions' component={EmiOptions} />
+                    <Route exact path='/onepagecheckout' component={OnePageCheckout} />
+                    <Route exact path='/login' component={Login} />
+                    <Route exact path='/Otp' component={Otp} />
+                    <Route exact path='/SignIn' component={SignIn} />
+                    <Route exact path='/signup' component={SignUp} />
+                    <Route exact path='/review' component={Review} />
+                    <Route exact path='/Allreview' component={Allreview} />
+                    <Route exact path='/Emptycart' component={Emptycart} />
+                    <Route exact path='/Transactionerror' component={Transactionerror} />
+                    <Route exact path='/Orderplaced' component={Orderplaced} />
+                    <Route exact path='/Cart' component={Cart} />
+                    <Route exact path='/address' component={Address} />
+                    <Route exact path='/checkoutpage' component={CheckoutPage} />
+                    <Route exact path='/flashsale' component={FlashSalePage} />
+                    <Route exact path='/customeraddress' component={CustomerAddress} />
+                    <Route exact path='/account' component={Account} />
+                    <Route exact path='/changepassword' component={Password} />
+                    <Route exact path='/wallet' component={Wallet} />
+                    <Route exact path='/profile' component={Profile} />
+                    <Route exact path='/wishlist' component={Wishlist} />
+                    <Route exact path='/emptywishlist' component={EmptyWishlist} />
+                    <Route exact path='/orderslist' component={OrdersList} />
+                    <Route exact path='/orderdetails' component={OrderDetails} />
+                    <Route exact path='/submitreview' component={SubmitReview} />
+                    <Route exact path='/cancellationrequest' component={CancellationRequest} />
+                    <Route exact path='/cancellationconfirmed' component={CancellationConfirmed} />
+                    <Route exact path='/supportcenterissues' component={SupportCenterIssues} />
+                    <Route exact path='/supportcenter' component={SupportCenter} />
+                    <Route exact path='/returnrequest' component={ReturnRequest} />
+                    <Route exact path='/contactus' component={ContactUs} />
+                    <Route exact path='/supportcenterqueries' component={SupportCenterQueries} />
+                    <Route exact path='/blogname' component={BlogName} />
+                    <Route exact path='/blog' component={Blog} />
+                    <Route exact path='/privacypolicy' component={PrivacyPolicy} />
+                    <Route exact path='/career' component={Career} />
+                    <Route exact path='/businessintelligence' component={BusinessIntelligence} />
+                    <Route exact path='/referafriend' component={ReferAFriend} />
+                    <Route exact path='/referafrienddetails' component={ReferAFriendDetails} />
+                </Switch>
+            </Router>
+        </>
     );
 };
