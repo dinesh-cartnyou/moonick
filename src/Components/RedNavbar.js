@@ -4,7 +4,7 @@ export const RedNavbar = (props) => {
     return (
       <Fragment>
         <section className="bodypanelmian aboutseller text-left">
-            <div style={{width:"100%",height:"3rem",backgroundColor:"#c2172e",color:"white"}}>
+            <div style={{width:"100%",height:"3rem",backgroundColor:"#000",color:"white"}}>
                                 <i class='bx bx-arrow-back' style={{fontSize: "1.3rem",
                                                                     margin: "0.7rem 0.3rem",
                                                                     position: "relative",

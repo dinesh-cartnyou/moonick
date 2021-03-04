@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import {RedNavbar} from "../Components/RedNavbar";
+import WrapperDiv from '../Components/wrapper-div';
 
 
 export const ReturnRequest = () => {
@@ -8,14 +9,15 @@ export const ReturnRequest = () => {
             <div class="badydiv">
                 <div class="universalDiv" style={{height: '100vh'}}>
                     <RedNavbar navbar="Request Return"></RedNavbar>
-                    <section className="bodypanelmian aboutseller text-left">
+                    <WrapperDiv className={'aboutseller text-left'} isFooterPresent={true} headerHeight={'48px'} footerHeight={'60px'}>
+                    {/* <section className="bodypanelmian aboutseller text-left"> */}
                       <div class="sellerlocation" style={{backgroundColor:"white"}}>
                         <div class="row">
                             <div className="col-3">
-                                <img src='/image/RealmeX50Pro.jpg' className='img-fluid' alt='img1' />
+                                <img src='https://images.bewakoof.com/t540/olive-men-slim-fit-casual-shirts-men-s-knitted-slim-fit-casual-shirt-307971-1613447547.jpg' className='img-fluid' alt='img1' />
                             </div>
                             <div className="col-9" style={{textAlign: 'left'}}>
-                                <p style={{lineHeight:"1rem",marginBottom:"0.4rem"}}>Realme X50 Pro 5G (Rust Red, 256GB)<br></br> (12GB RAM)</p>
+                                <p style={{lineHeight:"1rem",marginBottom:"0.4rem"}}>Comfort Pique Knit Olive Shirt<br></br> Exclusive</p>
                                 <p><span style={{float:"left"}}><i className='fas fa-rupee-sign' /> 599</span></p>
                             </div>
                         </div>
@@ -61,10 +63,11 @@ export const ReturnRequest = () => {
                         <div style={{fontFamily: 'Open Sans, sans-serif !important', margin:"1em .9em", boxShadow: '0px 0px 4px 1px gainsboro', padding: '.7em .7em'}}>
                             <textarea style={{width:"100%", border:"none", height:"4rem", padding:"9px", boxSizing:"border-box"}} placeholder="Comment (Optional)"></textarea>
                         </div>
-                        <div className="submit-button" style={{position:"relative", display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column", top: '0rem !important'}}>
-                            <button type="button" class="btn btn-danger" style={{backgroundColor:" #c2172e",width:"92%", marginBottom: '2rem'}}>SUBMIT</button>
-                        </div>
-                    </section>
+                    {/* </section> */}
+                    </WrapperDiv>
+                    <div className="submit-button" style={{height: '60px',position:"relative", display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column", top: '0rem !important'}}>
+                        <button type="button" class="btn" style={{backgroundColor:" #000",width:"92%",color: '#fff'}}>SUBMIT</button>
+                    </div>
                 </div>
             </div>
         </Fragment>

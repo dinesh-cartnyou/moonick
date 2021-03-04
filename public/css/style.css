@@ -172,11 +172,11 @@ img {
 
 /*----parent color----*/
 .reds {
-  color: #f64e60;
+  color: #000;
 }
 
 .bgbtn {
-  background: #c2172e;
+  background: #000;
 }
 
 .bgcolor {
@@ -219,7 +219,7 @@ img {
 }
 
 .searchbycatogery ul li.active {
-  background: #c2172e;
+  background: #000;
   color: #fff;
   padding: .2em 1em;
   border-radius: .2em;
@@ -399,7 +399,7 @@ header .humburgermenu .sidebarMenu .buttombanner {
   background: #fff;
   box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.10);
   padding: 0px;
-  z-index: 99;
+  z-index: 1001;
   transform: translate(-100%, 0);
   transition: all .3s cubic-bezier(.29, .39, .68, .53);
   -webkit-transition: all .3s cubic-bezier(.29, .39, .68, .53)
@@ -612,7 +612,7 @@ header .humburgermenu .sidebarMenu .buttombanner {
 }
 
 .bodypanelmian .flashsale .timer .tm {
-  background: #c2172e;
+  background: #000;
   width: 2em;
   color: #fff;
   font-size: 1em;
@@ -636,7 +636,7 @@ header .humburgermenu .sidebarMenu .buttombanner {
 
 .bodypanelmian .flashsale .viewbtn .btn {
   font-size: 1em;
-  color: #c2172e;
+  color: #000;
   font-weight: 600;
   font-family: 'Roboto Slab', serif;
 }
@@ -694,12 +694,12 @@ header .humburgermenu .sidebarMenu .buttombanner {
   font-size: .6em;
   font-weight: 600;
   margin: 1.1em .5em;
-  color: #c2172e;
+  color: #000;
   margin-left: 0;
 }
 
 .bodypanelmian .flashsale .txt .rateing .rate {
-  background: #c2172e;
+  background: #000;
   float: right;
   color: #fff;
   margin-bottom: 0;
@@ -722,7 +722,7 @@ header .humburgermenu .sidebarMenu .buttombanner {
 }
 
 .bodypanelmian .customtimer .timer .tm {
-  background: #c2172e;
+  background: #000;
   width: 1.5em;
   color: #fff;
   font-size: .6em;
@@ -963,7 +963,7 @@ footer .collapsemoreabout .heading i {
   right: 9px;
   content: " ";
   display: block;
-  background: #c2172e;
+  background: #000;
 }
 
 .multiproductview .filter_div .selectbox label {
@@ -1039,7 +1039,7 @@ footer .collapsemoreabout .heading i {
 }
 
 .multiproductview .filter_div .categheading .dot {
-  background: #dc3545;
+  background: #000;
   width: .4em;
   height: .4em;
   position: absolute;
@@ -1049,7 +1049,7 @@ footer .collapsemoreabout .heading i {
 }
 
 .multiproductview .filter_div .categheading .nav-pills .nav-link.active {
-  color: #c2172e;
+  color: #000;
   background-color: #ffffff;
   border-radius: 0;
 }
@@ -1107,7 +1107,7 @@ footer .collapsemoreabout .heading i {
 }
 
 .multiproductview .filter_div .categlist input[type="checkbox"]:checked+label:before {
-  background: #c2172e;
+  background: #000;
   color: #fff;
   content: "\2713";
   text-align: center;
@@ -1119,7 +1119,7 @@ footer .collapsemoreabout .heading i {
 }
 
 .multiproductview .filter_div .categlist input[type="checkbox"]:focus+label::before {
-  outline: rgb(59, 153, 252) auto 5px;
+  outline: rgba(0,0,0,0.7) auto 5px;
 }
 
 .multiproductview .filter_div .categlist .min-max {
@@ -1153,8 +1153,8 @@ footer .collapsemoreabout .heading i {
 }
 
 .multiproductview .filter_div .applyfilter .btn.btn-outline-primary {
-  color: #dc3545;
-  border-color: #dc3545;
+  color: #000;
+  border-color: #000;
 }
 
 .multiproductview .filter_div .applyfilter button {
@@ -1180,7 +1180,7 @@ footer .collapsemoreabout .heading i {
 }
 
 .bodypanelmian.multiproductview .renewed .confiton {
-  background: green;
+  background: #000;
   color: #fff;
   padding: .2em;
   font-size: .5em;
@@ -1188,7 +1188,7 @@ footer .collapsemoreabout .heading i {
 }
 
 .bodypanelmian.multiproductview .renewed .rend {
-  color: green;
+  color: #000;
   padding: .2em;
   margin-left: .4em;
   font-size: .5em;
@@ -1229,7 +1229,8 @@ footer .collapsemoreabout .heading i {
 }
 
 .bodypanelmian.multiproductview .flashsale .flashslder .rotate {
-  -webkit-transform: rotate(-90deg)-moz-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   -o-transform: rotate(-90deg);
   transform: rotate(-90deg);
@@ -1255,7 +1256,7 @@ footer .collapsemoreabout .heading i {
 }
 
 .bodypanelmian .productimg .wishlistsection .icon i {
-  color: #ef929f;
+  color: #000;
   font-size: 1.3em;
 }
 
@@ -1271,7 +1272,7 @@ footer .collapsemoreabout .heading i {
 .bodypanelmian .productdetails .ratingcount {
   font-size: .6em;
   font-weight: 600;
-  color: #c2172e;
+  color: #000;
   margin-bottom: 0;
   width: 100%;
   float: right;
@@ -1333,7 +1334,7 @@ footer .collapsemoreabout .heading i {
 .bodypanelmian .offer-section .tc .moreoffer {
   text-align: right;
   font-size: .7em;
-  color: #c2172e;
+  color: #000;
   font-weight: 600;
 }
 
@@ -1393,7 +1394,7 @@ footer .collapsemoreabout .heading i {
 }
 
 .bodypanelmian .delivery .pinc .changepin {
-  color: #c21930;
+  color: #000;
   font-weight: 600;
   font-size: .9em;
 }
@@ -1439,7 +1440,7 @@ footer .collapsemoreabout .heading i {
 }
 
 .bodypanelmian .boxvariats .tabv .active {
-  background: #00501d;
+  background: #000;
   color: #fff;
   padding: .2em 1.7em;
   font-weight: 600;
@@ -1463,7 +1464,7 @@ footer .collapsemoreabout .heading i {
   position: absolute;
   right: 8px;
   top: 32px;
-  color: #c21930;
+  color: #000;
 }
 
 .bodypanelmian .boxvariats .rightarrw.tw {
@@ -1534,7 +1535,7 @@ footer .collapsemoreabout .heading i {
 }
 
 .bodypanelmian .specification .text-right.viwall {
-  color: #c21930;
+  color: #000;
   font-weight: 600;
 }
 
@@ -1548,7 +1549,7 @@ footer .collapsemoreabout .heading i {
   text-align: right;
   float: right;
   width: 100%;
-  color: #c21930;
+  color: #000;
   font-weight: 600;
 }
 
@@ -1577,7 +1578,7 @@ footer .collapsemoreabout .heading i {
 }
 
 .bodypanelmian .warranty .iconholder .wrtybox span {
-  background: #1a5d7b;
+  background: #000;
   color: #fff;
   padding: .1em .7em;
   border-radius: .2em;
@@ -1602,7 +1603,7 @@ footer .collapsemoreabout .heading i {
 .bodypanelmian .rating_review .ratep .ponit {
   font-size: .8em;
   font-weight: 600;
-  color: #009737;
+  color: #000;
 }
 
 .bodypanelmian .rating_review .ratep .pt {
@@ -1641,7 +1642,7 @@ footer .collapsemoreabout .heading i {
 }
 
 #profile-description .show-more {
-  color: #c2172e;
+  color: #000;
   position: relative;
   font-size: 12px;
   padding-top: 5px;
@@ -1654,7 +1655,7 @@ footer .collapsemoreabout .heading i {
 }
 
 #profile-description .show-more:hover {
-  color: #d04f61;
+  color: #000;
 }
 
 #profile-description .show-more-height {
@@ -1690,7 +1691,7 @@ footer .collapsemoreabout .heading i {
 }
 
 .variantspage .productdetail .reniewd {
-  background: green;
+  background: #000;
   color: #fff;
   padding: .3em;
   font-size: .8em;
@@ -1733,7 +1734,7 @@ footer .collapsemoreabout .heading i {
   font-size: .6em;
   font-weight: 600;
   margin: 1.1em .5em;
-  color: #c2172e;
+  color: #000;
 }
 
 .variantspage .pcolor ul li {
@@ -1748,11 +1749,11 @@ footer .collapsemoreabout .heading i {
 }
 
 .variantspage .pcolor ul li img.active {
-  border: .1em solid #c2172e;
+  border: .1em solid #000;
 }
 
 .variantspage .pcolor .clr-p {
-  color: #c2172e;
+  color: #000;
   font-weight: 500;
 }
 
@@ -1776,10 +1777,10 @@ footer .collapsemoreabout .heading i {
 }
 
 .variantspage .phonebox .storage.active {
-  border: .1em solid #c2172e;
-  color: #c2172e;
+  border: .1em solid #000;
+  color: #000;
   border-radius: .1em;
-  border: 1.3px solid #c2172e;
+  border: 1.3px solid #000;
   margin: 0em .7em 0em 0em;
   padding: .1em .7em;
 }
@@ -1795,7 +1796,7 @@ footer .collapsemoreabout .heading i {
 }
 
 .variantspage .productcondition .text-right .renw {
-  background: green;
+  background: #000;
   color: #fff;
   padding: .3em;
   font-size: .8em;
@@ -1827,7 +1828,7 @@ footer .collapsemoreabout .heading i {
 }
 
 .variantspage .table_condition tr.active {
-  color: #c2172e;
+  color: #000;
 }
 
 .variantspage .continebtn {
@@ -1851,7 +1852,7 @@ footer .collapsemoreabout .heading i {
 
 
 .pcolor ul li img {
-  border: .1em solid #c2172e;
+  border: .1em solid #000;
 }
 
 
@@ -1872,7 +1873,7 @@ footer .collapsemoreabout .heading i {
 
 .specificationtab .nav-pills .nav-link.active {
   background-color: transparent;
-  color: #c2172e;
+  color: #000;
   border-bottom: .22em solid;
 }
 
@@ -2047,7 +2048,7 @@ footer .collapsemoreabout .heading i {
 }
 
 .flashsale .timer .tm {
-  background: #c2172e;
+  background: #000;
   width: 2em;
   color: #fff;
   font-size: 1em;
@@ -2071,7 +2072,7 @@ footer .collapsemoreabout .heading i {
 
 .flashsale .viewbtn .btn {
   font-size: 1em;
-  color: #c2172e;
+  color: #000;
   font-weight: 600;
   font-family: 'Roboto Slab', serif;
 }
@@ -2114,12 +2115,12 @@ footer .collapsemoreabout .heading i {
   font-size: .6em;
   font-weight: 600;
   margin: 1.1em .5em;
-  color: #c2172e;
+  color: #000;
   margin-left: 0;
 }
 
 .flashsale .txt .rateing .rate {
-  background: #c2172e;
+  background: #000;
   float: right;
   color: #fff;
   margin-bottom: 0;
@@ -2179,7 +2180,7 @@ footer .collapsemoreabout .heading i {
 }
 
 .aboutseller .sellerrating .iconholder .count {
-  color: #306a45;
+  color: #000;
   font-size: 1.499em;
   font-weight: 600;
   float: left;
@@ -2212,7 +2213,7 @@ footer .collapsemoreabout .heading i {
 }
 
 .aboutseller .sellerlocation.address .wurl {
-  color: #c2172e;
+  color: #000;
   font-weight: 600;
 }
 
@@ -2284,7 +2285,7 @@ footer .collapsemoreabout .heading i {
 }
 
 .emipage .bankemisub .rarrow i {
-  color: #c2172e;
+  color: #000;
 }
 
 .emipage .bankemisub .bnkimg img {
@@ -2313,7 +2314,7 @@ footer .collapsemoreabout .heading i {
 
 .reviewrating .user-review .topbox .tr {
   font-size: 1.3em;
-  color: green;
+  color: #000;
   font-weight: 700;
 }
 
@@ -2338,7 +2339,7 @@ footer .collapsemoreabout .heading i {
 
 .reviewrating .user-review .count p {
   font-size: .7em;
-  color: #555;
+  color: #000;
   font-weight: 600;
 }
 
@@ -2368,7 +2369,7 @@ footer .collapsemoreabout .heading i {
 }
 
 .reviewrating .user-review .rateshow .progress-bar {
-  background-color: green;
+  background-color: #000;
   border-radius: 1em;
 }
 
@@ -2385,11 +2386,11 @@ footer .collapsemoreabout .heading i {
 }
 
 .reviewrating .user-review .rateshow .mdindiv.ratedown .progress-bar {
-  background: #ff9203;
+  background: #000;
 }
 
 .reviewrating .user-review .rateshow .mdindiv.danger .progress-bar {
-  background: #ff0000;
+  background: #000;
 }
 
 .reviewrating .user-review .rateshow .numofrate p {
@@ -2399,7 +2400,7 @@ footer .collapsemoreabout .heading i {
 .reviewrating .user-review .blank_user {
   width: 75px;
   height: 75px;
-  /* border: 2px solid #c2172e; */
+  /* border: 2px solid #000; */
   border: 2px solid #000;
   border-radius: 50%;
   position: relative;
@@ -2418,12 +2419,12 @@ footer .collapsemoreabout .heading i {
   transform: translate(-50%, -50%);
   font-size: 1.5em;
   font-weight: 600;
-  /* color: #c2172e; */
+  /* color: #000; */
   color: #000;
 }
 
 .reviewrating .user-review .tolrate .pp {
-  background: green;
+  background: #000;
   color: #fff;
   font-size: .9em;
   border-radius: .2em;
@@ -2438,11 +2439,11 @@ footer .collapsemoreabout .heading i {
 }
 
 .reviewrating .user-review .tolrate .pp.mediumrate {
-  background: #ff9203;
+  background: #000;
 }
 
 .reviewrating .user-review .tolrate .pp.lowrate {
-  background: #ff0000;
+  background: #000;
 }
 
 .reviewrating .user-review .userimg .imgbox {
@@ -2475,7 +2476,7 @@ footer .collapsemoreabout .heading i {
 
 .reviewrating .user-review .ratingview .top .text-left .fr {
   font-weight: 700;
-  color: green;
+  color: #000;
   position: relative;
   top: .1em;
 }
@@ -2550,7 +2551,7 @@ footer .collapsemoreabout .heading i {
 
 .reviewrating .user-review .star:hover,
 .reviewrating .user-review .star:hover~.star {
-  color: #ff9203;
+  color: #000;
 }
 
 /* don't hover after choosing */
@@ -2560,7 +2561,7 @@ footer .collapsemoreabout .heading i {
 }
 
 .reviewrating .user-review .choosen {
-  color: #c2172e;
+  color: #000;
   /* red color */
 }
 
@@ -2622,21 +2623,21 @@ footer .collapsemoreabout .heading i {
 }
 
 .stckyfooter .wp {
-  border: 1px solid #c2172e;
-  color: #c2172e;
+  border: 1px solid #000;
+  color: #000;
   padding: .32em 1em;
   font-size: 17px;
 }
 
 .stckyfooter .cart {
-  border: 1px solid #c2172e;
-  color: #c2172e;
+  border: 1px solid #000;
+  color: #000;
   padding: .32em 1em;
   font-size: 17px;
 }
 
 .stckyfooter .btn-default {
-  background: #c2172e;
+  background: #000;
   color: #fff;
   padding: .3em .9em;
   font-size: .9em;
@@ -2676,8 +2677,12 @@ footer .collapsemoreabout .heading i {
   width: 92.5%;
   position: absolute;
   z-index: 1;
-
 }
+
+/* .checkout-container{
+  position: unset; */
+  /* z-index:unset; */
+/* } */
 
 @media only screen and (min-width: 600px) {
   .container-for-progress {
@@ -2685,6 +2690,10 @@ footer .collapsemoreabout .heading i {
     position: absolute;
     z-index: 1;
   }
+  /* .checkout-container{
+    position: unset;
+    /* z-index:unset; 
+  } */
 }
 
 @media only screen and (min-width: 600px) {
@@ -2693,6 +2702,10 @@ footer .collapsemoreabout .heading i {
     position: absolute;
     z-index: 1;
   }
+  /* .checkout-container{
+    position: unset;
+    /* z-index:unset; 
+  } */
 }
 
 .progressbar-progress li {
@@ -2741,12 +2754,12 @@ footer .collapsemoreabout .heading i {
 }
 
 .progressbar-progress li.Progress-Active+li:after {
-  background: #c2172e;
+  background: #000;
 }
 
 .progressbar-progress li.Progress-Active+li:before {
-  border-color: #c2172e;
-  background: #c2172e;
+  border-color: #000;
+  background: #000;
   color: white;
 }
 
@@ -2756,7 +2769,7 @@ footer .collapsemoreabout .heading i {
   z-index: 1;
   overflow: hidden;
   text-align: center;
-  color: #c2172e;
+  color: #000;
 }
 
 .strike-through-text:before {
@@ -2766,7 +2779,7 @@ footer .collapsemoreabout .heading i {
   width: 20%;
   height: 0.5px;
   content: '\a0';
-  background-color: #c2172e;
+  background-color: #000;
 }
 
 .strike-through-text:after {
@@ -2776,7 +2789,7 @@ footer .collapsemoreabout .heading i {
   width: 20%;
   height: 0.5px;
   content: '\a0';
-  background-color: #c2172e;
+  background-color: #000;
 }
 
 .strike-through-text:before {
@@ -2819,7 +2832,7 @@ footer .collapsemoreabout .heading i {
 }
 
 .input-tag-for-focus:focus {
-  box-shadow: 0px 0px 4px #c2172e;
+  box-shadow: 0px 0px 4px #000;
 }
 
 @media (max-width: 500px) {
@@ -3043,7 +3056,7 @@ ul.menu {
 }
 
 .customer-account-image {
-  background-color: #c2172e;
+  background-color: #000;
   border-radius: 50%;
   height: 4rem;
   width: 4rem;
@@ -3221,11 +3234,11 @@ ul.menu {
 }
 
 input:checked+.slider {
-  background-color: #c2172e;
+  background-color: #000;
 }
 
 input:focus+.slider {
-  box-shadow: 0 0 1px #c2172e;
+  box-shadow: 0 0 1px #000;
 }
 
 input:checked+.slider:before {
@@ -3322,12 +3335,12 @@ input:checked+.slider:before {
 
 .star-rating>i:hover:before,
 .star-rating>i:hover~i:before {
-  color: gold;
+  color: #000;
 }
 
 .career-carousel-button:focus {
   color: white !important;
-  background-color: #c2172e !important;
+  background-color: #000 !important;
 }
 
 body {
@@ -3362,4 +3375,34 @@ body {
   text-decoration: underline !important;
   text-align: center !important;
   text-transform: uppercase !important;
+}
+
+.logo-image{
+  max-height:60px;
+}
+
+.one-page-checkout-content{
+  height:calc(100% - 137px);
+  overflow:scroll;
+}
+
+input:focus{
+  border-color:#000!important;
+}
+
+.WithStyles\(ForwardRef\(TextField\)\)-root-2 .MuiOutlinedInput-root.Mui-focused fieldset{
+  border-color:#000!important;
+}
+
+legend{
+  color:#000!important;
+}
+
+.PrivateNotchedOutline-legendLabelled-5.PrivateNotchedOutline-legendNotched-6{
+  color:#000!important;
+}
+
+.modal-dialog{
+  max-width:380px!important;
+  
 }

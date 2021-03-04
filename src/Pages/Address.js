@@ -13,7 +13,7 @@ import {
   const CssTextField = withStyles({
     root: {
       '& label.Mui-focused': {
-        color: '#c2172e',
+        color: '#000',
       },
       '& .MuiInput-underline:after': {
         borderBottomColor: 'green',
@@ -26,7 +26,7 @@ import {
           borderColor: 'gainsboro',
         },
         '&.Mui-focused fieldset': {
-          borderColor: '#c2172e',
+          borderColor: '#000',
         },
       },
     },
@@ -51,8 +51,8 @@ export const Address = () => {
         const office=document.getElementById("office-address-button");
 
         if(home.style.color=="grey"){
-          home.style.color="#c2172e";
-          home.style.border="2px solid #c2172e"
+          home.style.color="#000";
+          home.style.border="2px solid #000"
           office.style.color="grey"
           office.style.border="gainsboro solid 2px";
         }
@@ -62,8 +62,8 @@ export const Address = () => {
         const home=document.getElementById("home-address-button");
         const office=document.getElementById("office-address-button");
         if(office.style.color=="grey"){
-          office.style.color="#c2172e";
-          office.style.border="#c2172e solid 2px"
+          office.style.color="#000";
+          office.style.border="#000 solid 2px"
           home.style.color="grey"
           home.style.border="gainsboro solid 2px";
         }
@@ -74,17 +74,18 @@ export const Address = () => {
         <Fragment>
             <div class="badydiv">
                 <div class="universalDiv" style={{backgroundColor:"#f5f5f5", height:"calc(100vh)"}}>
-                    <div class="container" style={{ backgroundColor: "white" }}></div>
+                    <div class="container" style={{ backgroundColor: "white",height: "100vh" }}>
                     <Navbar />
-                    <section class="bodypanelmian" style={{ display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column" }}>
-                            <section className="aboutseller">
-                                <div className="sellerlocation" style={{ backgroundColor: "white" }}>
+                    <section class="bodypanelmian" style={{ height: "calc(100% - 127px)",overflow:"scroll",display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column" }}>
+                            {/* <section className="aboutseller"> */}
+                                {/* <div className="sellerlocation" style={{ backgroundColor: "white" }}> */}
                                     <p style={{
                                         display: 'flex',
                                         alignItems: 'center',
                                         justifyContent: 'center',
                                         flexDirection: 'column',
                                         fontSize:"18px",
+                                        marginTop: "330px"
                                     }}>Enter Your Shipping Address</p>
                                     <form className={classes.root} noValidate autoComplete="off">
                                         <CssTextField
@@ -170,23 +171,26 @@ export const Address = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="container">
+                                    <div class="container mb-3" style={{ width: '93%' }}>
                                         <div class="row">
                                              <p style={{fontSize:"14px",color:"grey",margin:"0.5rem 1rem"}}>Address Type</p>
                                          </div>
                                          <div class="row">
                                              <div class="col-4" style={{marginRight:"0.3rem"}}>
-                                                <button className="btn" id="home-address-button" onClick={Home} style={{ padding: "4% 3%", border: "#c2172e solid 2px", borderRadius:"3px", backgroundColor: "white", color: "#c2172e",width:"115%" }}><b>Home</b></button>
+                                                <button className="btn" id="home-address-button" onClick={Home} style={{ padding: "4% 3%", border: "#000 solid 2px", borderRadius:"3px", backgroundColor: "white", color: "#000",width:"115%" }}><b>Home</b></button>
                                              </div>
                                              <div class="col-4">
                                                 <button className="btn" id="office-address-button" onClick={office} style={{ padding: "4% 3%", border: "gainsboro solid 2px", borderRadius:"3px", backgroundColor: "white", color: "grey",width:"115%" }}><b>Office</b></button>
                                              </div>
                                          </div>
-                                    </div>
-                                    <button type="button" class="btn btn-danger" style={{marginTop:"1.5rem",width:"100%"}}>SAVE THIS ADDRESS</button>
-                                </div>
-                            </section>
+                                    </div>                                    
+                                {/* </div> */}
+                            {/* </section> */}
                     </section>
+                    <div className='footer d-flex justify-content-center align-items-center' style={{height:"62px"}}>
+                        <button type="button" class="btn" style={{padding:"0 15px",height: "50px",width:"calc(100% - 30px)",background: "#000",color: "#fff"}}>SAVE THIS ADDRESS</button>
+                    </div>
+                    </div>
                 </div>
             </div>
         </Fragment>

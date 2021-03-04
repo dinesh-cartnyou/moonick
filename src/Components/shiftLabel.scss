@@ -1,0 +1,13 @@
+.initial{
+    top:15px;
+    transition: 300ms all ease-in-out;
+    @media only screen and (max-width:400px){
+        top:10px;
+    }
+}
+.shift-label{
+    top: -10px;
+    font-size:12px;
+    background:#fff;
+    transition: 300ms all ease-in-out;
+}

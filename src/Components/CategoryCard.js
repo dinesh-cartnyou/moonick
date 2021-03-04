@@ -15,7 +15,7 @@ export const CategoryCard = ({ data, image, categoryName }) => {
                 alt='Speakers'
               />
             </div>
-            <p >{categoryName || 'Design of the day' || data.category_name}</p>
+            <p className='m-0 text-center' style={{maxWidth: '100%'}}>{categoryName || 'Design of the day' || data.category_name}</p>
           </div>
         </div>
       }

@@ -8,7 +8,7 @@ export const ProductCard = (props) => {
           <div>
             <div className="out-of-stock" style={{ position: "absolute", zIndex: "8", backgroundColor: "gainsboro", opacity: "0.7", height: "97%", width: "87%", top: "0.4rem", left: "1rem" }}>
             </div>
-            <button type="button" class="btn btn-outline-danger out-of-stock-button" style={{ margin: "1rem 0", borderColor: "#c2172e", color: "#c2172e", padding: "0.4rem 1rem", position: "absolute", top: "40%", left: "8.5%", width: "86%", opacity: "1 !important", backgroundColor: "white", zIndex: "10" }}>Out Of Stock</button>
+            <button type="button" class="btn btn-outline-danger out-of-stock-button" style={{ margin: "1rem 0", borderColor: "#000", color: "#000", padding: "0.4rem 1rem", position: "absolute", top: "40%", left: "8.5%", width: "86%", opacity: "1 !important", backgroundColor: "white", zIndex: "10" }}>Out Of Stock</button>
           </div>
           : null
         }
@@ -17,7 +17,7 @@ export const ProductCard = (props) => {
           className='img-fluid p-0'
           alt='img1'
         />
-        {props.type === "wish" ? <i class='bx bx-x' style={{ position: "absolute", zIndex: "10", top: "1rem", left: "83%", color: "white", borderRadius: "50%", backgroundColor: "#c2172e" }}></i> : null}
+        {props.type === "wish" ? <i class='bx bx-x' style={{ position: "absolute", zIndex: "10", top: "1rem", left: "83%", color: "white", borderRadius: "50%", backgroundColor: "#000" }}></i> : null}
 
         <div className='txt'>
           <p className='productn'>

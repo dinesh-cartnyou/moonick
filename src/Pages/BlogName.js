@@ -4,6 +4,7 @@
 import React, { Fragment } from 'react';
 import { Navbar } from '../Components/Navbar';
 import { Card } from '../Components/Blogs/Card';
+import WrapperDiv from '../Components/wrapper-div';
 
 export const BlogName = () => {
 
@@ -12,7 +13,8 @@ export const BlogName = () => {
             <div class="badydiv">
                 <div class="universalDiv" style={{ backgroundColor: "#f5f5f5" }}>
                     <Navbar></Navbar>
-                    <section className="bodypanelmian aboutseller text-left">
+                    <WrapperDiv className={'aboutseller text-left'}>
+                    {/* <section className="bodypanelmian aboutseller text-left"> */}
                         <div className="sellerlocation" style={{ backgroundColor: "white", width: "100%", marginLeft: "0px" }}>
                             <img src="/image/m-product/s10plus.jpg" style={{ width: "100%" }}></img>
                             <div className="container" style={{ margin: "10px 0 10px 12px" }}>
@@ -63,7 +65,8 @@ export const BlogName = () => {
                             <Card></Card>
                             <Card></Card>
                         </div>
-                    </section>
+                    {/* </section> */}
+                    </WrapperDiv>
                 </div>
             </div>
         </Fragment>

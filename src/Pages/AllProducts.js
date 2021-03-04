@@ -8,28 +8,29 @@ import PropTypes from 'prop-types';
 import { allProducts } from '../actions/products/products-all';
 import Spinner from './spinner';
 
-const AllProducts = ({ allProducts, data }) => {
+const AllProducts = () => {
+// const AllProducts = ({ allProducts, data }) => {
   // const [products, setProducts] = useState(null);
-  useEffect(() => {
-    allProducts()
-  }, []);
+  // useEffect(() => {
+  //   allProducts()
+  // }, []);
 
-  console.log(data, 'products');
+  // console.log(data, 'products');
   return (
     <Fragment>
       <div class='badydiv'>
-        <div class='universalDiv'>
+        <div class='universalDiv' style={{position: 'relative'}}>
           <Navbar></Navbar>
-          <SortFilter></SortFilter>
-          {
+          <SortFilter style={{position: 'absolute',bottom: '0'}}></SortFilter>
+          {/* {
             !data || (data && data.loading) &&
             <Spinner style={{ padding: '20px 0' }} />
-          }
+          } */}
           {
-            data && !Object.keys(data.error).length > 0 && !data.loading &&
-            <section className='bodypanelmian' style={{ marginBottom: '55px' }}>
+            // data && !Object.keys(data.error).length > 0 && !data.loading &&
+            <section className='bodypanelmian' style={{ height: 'calc(100% - 125px)',overflow: 'scroll' }}>
               <div className='container'>
-                <ProductGrid data={data}></ProductGrid>
+                <ProductGrid></ProductGrid>
               </div>
             </section>
           }

@@ -29,17 +29,16 @@ export const OrderSummary = () => {
     <Fragment>
       <div class='badydiv'>
         <div class='universalDiv'>
-          <div class='container'>
+          <div class='container' style={{height: '100vh'}}>
             <Navbar></Navbar>
-            <section className="bodypanelmian aboutseller text-left" style={{ marginBottom: '20%', paddingBottom: '10px' }}>
-              <div className="container-for-progress" style={{ padding: "4px", boxShadow: "0px 0px 4px 1px gainsboro", margin: "10px 14px auto 14px" }}>
+            <section className="bodypanelmian aboutseller text-left" style={{ marginBottom: '20%', paddingBottom: '10px',height: 'calc(100% - 137px)',overflow: 'scroll' }}>
+              <div className="container-for-progress" style={{ padding: "4px", boxShadow: "0px 0px 4px 1px gainsboro", margin: "10px 14px auto 14px",position: 'relative' }}>
                 <ul className="progressbar-progress" style={{ display: "flex !important", justifyContent: "center", flexDirection: "row" }}>
                   <li className="Progress-Active" style={{ fontSize: "12px" }}>Add Address</li>
                   <li className="Progress-Active" style={{ fontSize: "12px" }}>Order Summary</li>
                   <li style={{ fontSize: "12px" }}>Payment</li>
                 </ul>
               </div>
-              <br></br><br></br><br></br>
               <div className='sellerlocation'>
                 <h3>
                   <b>Neeraj Sharma <span className='text-right' style={{ backgroundColor: 'lightgray', padding: '2px 10px', fontSize: '10px' }}>Office</span></b>
@@ -50,29 +49,47 @@ export const OrderSummary = () => {
                 <p>
                   +91-9123-4101-01
                   </p>
-                <button type="button" class="btn btn-outline-danger" style={{ padding: '0', width: '100%' }}><span style={{ fontSize: '12px' }}>Change or Add Address</span></button>
+                <button type="button" class="btn" style={{ padding: '10px 0', width: '100%',color: '#000',border: '1px solid #000' }}><span style={{ fontSize: '12px' }}>Change or Add Address</span></button>
               </div>
               <div className='sellerlocation'>
                 <div className="container">
                   <div className="row">
                     <div className="col-3">
-                      <img src="/image/RealmeX50Pro.jpg" alt="Product Image"></img>
+                      <img src="https://images.bewakoof.com/t540/the-traveller-full-sleeve-t-shirt-men-s-printed-full-sleeve-t-shirt-276528-1604378760.jpg" alt="Product Image"></img>
                     </div>
                     <div className="col-7" style={{
                       marginTop: "3%",
                     }}>
-                      <h3>Realme X50 Pro 5G(Rust Red, 256GB) (12GB RAM)</h3>
+                      <h3>Snitch Tiger White Satin Mandarin Collar Shirt</h3>
                       <h6 style={{
                         color: "gray",
                         fontSize: "10px",
-                      }}>4GB 128GB</h6>
+                      }}>Exclusive</h6>
                     </div>
                     <div className="col-2">
                     </div>
                   </div>
                 </div>
-                <div className="container" style={{ marginTop: "5%" }}>
-                  <div className="row">
+                <div classname='d-flex align-items-center w-100'>
+                  <div className='d-flex align-items-center float-left' >
+                      <h5 style={{fontSize: "15px",color: "lightgray",margin: '0'}}>Quantity</h5>
+                      <select id="cars" name="cars">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                      </select>
+                  </div>
+                  <div className='d-flex align-items-center ' style={{float: 'right'}}>
+                      <h5><b><span>&#8377;</span>5899</b></h5>
+                      <h5 style={{marginTop: "7px", marginLeft: "5px", color: "gray", fontSize: "12px"}}><strike><span>&#8377;</span>8999</strike></h5>
+                      <h6 style={{ color: "#000", fontSize: "12px", marginTop: "7px" }}>50% OFF</h6>
+                  </div>
+                </div>
+                {/* <div className="container" style={{ marginTop: "5%" }}> */}
+                      
+
+                  {/* <div className="row">
                     <div className="col-3">
                       <h5 style={{
                         fontSize: "15px",
@@ -88,9 +105,9 @@ export const OrderSummary = () => {
                       </select>
                     </div>
                     <div className="col-5"></div>
-                  </div>
-                </div>
-                <div className="container" style={{ marginTop: "5%" }}>
+                  </div> */}
+                {/* </div> */}
+                {/* <div className="container" style={{ marginTop: "5%" }}>
                   <div className="row">
                     <div className="col-3">
                       <h5 style={{
@@ -111,8 +128,8 @@ export const OrderSummary = () => {
                     </div>
                     <div className="col-5"></div>
                   </div>
-                </div>
-                <div className="container" style={{ marginTop: "5%" }}>
+                </div> */}
+                {/* <div className="container" style={{ marginTop: "5%" }}>
                   <div className="row">
                     <div className="col-2">
                       <h5><b><span>&#8377;</span>5899</b></h5>
@@ -126,12 +143,13 @@ export const OrderSummary = () => {
                       }}><strike><span>&#8377;</span>8999</strike></h5>
                     </div>
                     <div className="col-3">
-                      <h6 style={{ color: "red", fontSize: "12px", marginTop: "7px" }}>50% OFF</h6>
+                      <h6 style={{ color: "#000", fontSize: "12px", marginTop: "7px" }}>50% OFF</h6>
                     </div>
                   </div>
-                </div>
+                </div> */}
+                
                 <h5 style={{
-                  marginTop: "7px",
+                  marginTop: "37px",
                   marginLeft: "5px",
                   color: "gray",
                   fontSize: "12px"
@@ -163,7 +181,7 @@ export const OrderSummary = () => {
                 <div>
                   <input type="checkbox" id='switch' style={{ margin: "0.12rem 0.5rem", height: "1rem", backgroundColor: "#c2172e", float: "left" }} onClick={changeOk}></input>
                   <span style={{ float: "left", fontSize: "14px" }}>Add GST details</span>
-                  <span style={{ float: "right", color: "red", fontSize: "15px", display:"none", cursor:'pointer' }}id="edit-gst"  data-toggle="modal" data-target="#exampleModal">Edit</span>
+                  <span style={{ float: "right", color: "#000", fontSize: "15px", display:"none", cursor:'pointer' }}id="edit-gst"  data-toggle="modal" data-target="#exampleModal">Edit</span>
                   <br />
                 </div>
                   <p style={{display:"none"}} id="details-gst">
@@ -184,7 +202,7 @@ export const OrderSummary = () => {
 
                 <p>
                   Shipping Cost
-                    <span className='text-right' style={{ float: 'right', color: '#C32D2F' }}> Free Shipping </span>
+                    <span className='text-right' style={{ float: 'right', color: '#000' }}> Free Shipping </span>
                 </p>
 
                 <p>
@@ -203,15 +221,16 @@ export const OrderSummary = () => {
                 </p>
                 <hr style={{ margin: '2% 0' }} />
                 <p>
-                  You will save<span className='text-right' style={{ color: '#C32D2F' }}>  &#8377; 4500 </span> in this order
+                  You will save<span className='text-right' style={{ color: '#000',fontWeight: 'bold' }}>  &#8377; 4500 </span> in this order
                   </p>
-              </div>
-              <div class="footer" style={{
+              </div>              
+            </section>
+            <div class="footer" style={{
                 position: 'fixed',
                 bottom: '0',
                 width: '576px',
                 backgroundColor: '#ffffff',
-                height: '4.5rem',
+                height: '72px',
                 display: 'flex',
                 justifyContent: 'center',
                 flexDirection: 'column',
@@ -225,12 +244,12 @@ export const OrderSummary = () => {
                         margin: '0 1rem'
                       }}>
                         <p class="left-foot">Total</p>
-                        <p style={{ color: 'red' }}>₹5899</p>
+                        <p style={{ color: '#000' }}>₹5899</p>
                       </div>
                     </div>
                     <div class="col-6">
-                      <button type="button" class="btn btn-danger right-foot proceed-to-payment" style={{
-                        float: 'right', width: '60%'
+                      <button type="button" class="btn right-foot proceed-to-payment" style={{
+                        float: 'right', width: '60%',background: '#000',color: '#fff'
                       }}>
                         Proceed to Payment
                     </button>
@@ -238,7 +257,6 @@ export const OrderSummary = () => {
                   </div>
                 </div>
               </div>
-            </section>
           </div>
         </div>
       </div>
@@ -259,7 +277,7 @@ export const OrderSummary = () => {
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn" id="save-modal-btn" style={{ backgroundColor: "#c2172e", color: "white", width: "100%" }} data-dismiss="modal" onClick={gstDetails}>Confirm and Save</button>
+              <button type="button" class="btn" id="save-modal-btn" style={{ backgroundColor: "#000", color: "white", width: "100%" }} data-dismiss="modal" onClick={gstDetails}>Confirm and Save</button>
             </div>
           </div>
         </div>

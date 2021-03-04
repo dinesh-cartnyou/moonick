@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import { Navbar } from '../Components/Navbar';
 import { UploadCV } from '../Components/Career/UploadCV';
 import { Footer } from '../Components/Footer';
+import WrapperDiv from '../Components/wrapper-div';
 
 export const BusinessIntelligence = () => {
     return (
@@ -9,6 +10,7 @@ export const BusinessIntelligence = () => {
             <div class="badydiv">
                 <div class="universalDiv" style={{ backgroundColor: "#F5F5F5" }}>
                     <Navbar />
+                    <WrapperDiv className={'aboutseller text-left'}>
                     <section class="bodypanelmian aboutseller text-left">
                       <div className="sellerlocation" style={{ backgroundColor: "#fff" }}>
                         <h3>Business Intelligence</h3>
@@ -32,6 +34,7 @@ export const BusinessIntelligence = () => {
                       <UploadCV btn={false} />
                     </section>
                     <Footer></Footer>
+                    </WrapperDiv>
                 </div>
             </div>
         </Fragment>

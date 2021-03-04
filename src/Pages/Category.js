@@ -20,7 +20,7 @@ export const Category = () => {
       <div class='badydiv'>
         <div class='universalDiv'>
           <Navbar></Navbar>
-          <section className='bodypanelmian'>
+          <section className='bodypanelmian' style={{height: 'calc(100% - 65px)',overflowY: 'scroll',overflowX: 'hidden'}}>
             <div className='container'>
               <div className='row no-gutters'>
                 <div className='col'>

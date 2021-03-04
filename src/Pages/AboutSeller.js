@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import { Navbar } from '../Components/Navbar';
+import WrapperDiv from '../Components/wrapper-div';
 
 export const AboutSeller = () => {
   return (
@@ -9,7 +10,8 @@ export const AboutSeller = () => {
           <div className='container'>
             <Navbar></Navbar>
           </div>
-          <section className='bodypanelmian aboutseller text-left'>
+          <WrapperDiv className={'aboutseller text-left'}>
+          {/* <section className='bodypanelmian aboutseller text-left' style={{height: 'calc(100% - 65px)',overflow: 'scroll'}}> */}
             <div className='row no-gutters'>
               <div className='col'>
                 <div className='sellerlocation'>
@@ -71,7 +73,8 @@ export const AboutSeller = () => {
                 </div>
               </div>
             </div>
-          </section>
+          {/* </section> */}
+          </WrapperDiv>
         </div>
       </div>
     </Fragment>

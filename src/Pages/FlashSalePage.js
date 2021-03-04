@@ -3,15 +3,16 @@ import { Navbar } from '../Components/Navbar';
 import { ProductGrid } from '../Components/AllProducts Page/ProductGrid';
 import { Footer } from '../Components/Footer';
 import { SortFilter } from '../Components/AllProducts Page/SortFilter';
-
+import WrapperDiv from '../Components/wrapper-div';
 
 export const FlashSalePage = () => {
   return (
     <Fragment>
       <div class='badydiv'>
-        <div class='universalDiv' style={{backgroundColor:"#f5f5f5"}}>
+        <div class='universalDiv' style={{backgroundColor:"#f5f5f5",position: 'relative',height: '100vh'}}>
           <Navbar></Navbar>
-          <div style={{position:"sticky", top:"0", zIndex:"100"}}>
+          
+          <div style={{position: 'relative',height: 'calc(100vh - 65px)'}}>
             <SortFilter given="true"></SortFilter>
             <div className='flashsale' style={{backgroundColor:"white", boxShadow:"1px 0px 4px"}}>
               <div className='row no-gutters'>
@@ -43,16 +44,19 @@ export const FlashSalePage = () => {
                 </div>
               </div>
             </div>
+          
+            <WrapperDiv className={'flashsale'} headerHeight={'104px'} isFooterPresent={true} footerHeight={'60px'} innerWrapper={true}>
+              <section className='bodypanelmian'>
+                <div className='container'>
+                  <ProductGrid ></ProductGrid>
+                  <div style={{marginTop:"12px"}}>
+                    <Footer></Footer>
+                  </div>                
+                </div>
+              </section>
+            </WrapperDiv>
           </div>
 
-          <section className='bodypanelmian'>
-            <div className='container'>
-              <ProductGrid ></ProductGrid>
-              <div style={{marginTop:"12px"}}>
-                <Footer></Footer>
-              </div>                
-            </div>
-          </section>
         </div>
       </div>
     </Fragment>

@@ -20,14 +20,14 @@ export const OrdersCard = (props) => {
           <div className="container">
             <div className="row">
               <div className="col-3">
-                <img src='/image/RealmeX50Pro.jpg' className='img-fluid' alt='img1' style={props.orderStatus=="Cancelled"?{opacity:"0.5"}:null} />
+                <img src='https://images.bewakoof.com/t540/pocket-joint-sun-active-t-shirt-men-s-printed-t-shirts-262558-1579955492.gif' className='img-fluid' alt='img1' style={props.orderStatus=="Cancelled"?{opacity:"0.5"}:null} />
               </div>
               <div className="col-8" style={{textAlign: 'left'}}>
-                <p>Realme X50 Pro 5G (Rust Red, 256GB) (12GB RAM)</p>
+                <p>Pocket Joint Sun Active T-Shirt</p>
                 {(props.orderStatus === "Cancelled") ? 
-                  <p style={{color: '#c2172e'}}>{ props.orderStatus }</p>
+                  <p style={{color: '#000'}}>{ props.orderStatus }</p>
                   :
-                  <p style={{color: 'green'}}>{ props.orderStatus }</p>
+                  <p style={{color: '#000'}}>{ props.orderStatus }</p>
                 }
               </div>
             </div>
@@ -68,7 +68,7 @@ export const OrdersCard = (props) => {
                   <i class='bx bxs-star' id="gold-4" onClick={colorChange} style={{fontSize: '1.5rem',color:"gainsboro"}}></i>
                 </div>
                 <div className="col-6" style={{textAlign: 'right'}}>
-                  <span style={{color: '#c2172e', cursor: 'pointer', fontSize: '12px'}}>Write a Review</span>
+                  <span style={{color: '#000', cursor: 'pointer', fontSize: '12px'}}>Write a Review</span>
                 </div>
               </div>
               :

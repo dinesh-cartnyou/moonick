@@ -1,6 +1,14 @@
-import React, { Fragment } from 'react';
+import React, { Fragment,useEffect,useState } from 'react';
 
 export const Navbar = () => {
+  console.log(window.innerWidth,'window.innerWidth');
+
+  let remainingWidth = (window.innerWidth - 400)/2;
+  let [width,setWidth] = useState('');
+  useEffect(() => {
+    setWidth(window.innerWidth > 400 ? remainingWidth : 0);
+  },[remainingWidth])
+
   return (
     <Fragment>
       <header>
@@ -137,8 +145,8 @@ export const Navbar = () => {
                   />{' '}
                 </div>
               </div>
-              <div className='head'>
-                <div className='lefts h-100'>
+              <div className='head d-flex justify-content-between align-items-center' style={{position: 'relative'}}>
+                <div className='lefts h-100 w-auto'>
                   <a href='#' className='openMenu'>
                     {' '}
                     <img
@@ -146,9 +154,11 @@ export const Navbar = () => {
                       className='hambur'
                     />{' '}
                   </a>
+                </div>
+                <div className='middle' style={{position: 'absolute',left: '50%',transform: 'translateX(-50%)'}}>
                   <div className='logo h-100 d-flex'>
-                    {' '}
-                    <img className='p-0 ml-2 moonick-image align-self-center' src='image/header/moonick.png' />{' '}
+                      {' '}
+                    <img className='p-0 moonick-image align-self-center' style={{maxHeight:"55px"}} src='image/header/moonick.png' />{' '}
                   </div>
                 </div>
                 <div className='float-right'>

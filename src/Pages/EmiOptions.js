@@ -1,18 +1,20 @@
 import React, { Fragment } from 'react';
 import { Navbar } from '../Components/Navbar';
 import { EmiTable } from '../Components/EmiOptions Page/EmiTable';
+import WrapperDiv from '../Components/wrapper-div';
 
 export const EmiOptions = () => {
+  const handleFocus = e => {
+    
+  }
   return (
     <Fragment>
       <div class='badydiv'>
         <div class='universalDiv' style={{height:"100vh"}}>
-          <div class='container'>
+          <div class='container h-100'>
             <Navbar></Navbar>
-            <section
-              className='bodypanelmian'
-              style={{ marginRight: '1%', marginLeft: '1%' }}
-            >
+            <WrapperDiv className='px-2'>
+            {/* <section className='bodypanelmian' style={{ marginRight: '1%', marginLeft: '1%' }}> */}
               <div
                 style={{
                   backgroundColor: 'rgb(255, 255, 255)',
@@ -196,7 +198,8 @@ export const EmiOptions = () => {
                 />
               </button>
               <EmiTable></EmiTable>
-            </section>
+            {/* </section> */}
+            </WrapperDiv>
           </div>
         </div>
       </div>

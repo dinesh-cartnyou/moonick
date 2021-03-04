@@ -3,7 +3,7 @@ import React, { Fragment } from 'react';
 export const SortFilter = (props) => {
   return (
     <Fragment>
-      <section class='bodypanelmian multiproductview try'>
+      <section class='bodypanelmian multiproductview try' style={{position: 'absolute',bottom: '0'}}>
         <div class='container'>
           <div class='row no-gutters'>
             <div class='col-12'>

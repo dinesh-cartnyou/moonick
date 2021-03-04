@@ -302,7 +302,7 @@ export const ProductDescription = () => {
                         <div className="row no-gutters">
                           <div className="col">
                             <div className="ratep">
-                              <h4><span className="ponit red-color">4.2</span><span className="pt">/5</span></h4>
+                              <h4><span className="ponit black-color">4.2</span><span className="pt">/5</span></h4>
                               <img src="image/rating/r4.svg" alt="" />
                             </div>
                           </div>

@@ -11,7 +11,7 @@ import {
   const CssTextField = withStyles({
     root: {
       '& label.Mui-focused': {
-        color: '#c2172e',
+        color: '#000',
       },
       '& .MuiInput-underline:after': {
         borderBottomColor: 'green',
@@ -24,7 +24,7 @@ import {
           borderColor: 'gainsboro',
         },
         '&.Mui-focused fieldset': {
-          borderColor: '#c2172e',
+          borderColor: '#000',
         },
       },
     },
@@ -166,9 +166,9 @@ export const UploadCV = (props) => {
                       </div>
                       </div>
 
-                  <button className="btn btn-outline-danger">Upload Your CV</button>
+                  <button className="btn" style={{background: '#000',color: '#fff'}}>Upload Your CV</button>
                   <div className="submit-button" style={{position:"relative", display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column", top: '0rem !important'}}>
-                      <button type="button" data-toggle="modal" data-target="#exampleModal2" class="btn btn-danger" style={{backgroundColor:" #c2172e",width:"30%", marginBottom: '2rem'}}>Send</button>
+                      <button type="button" data-toggle="modal" data-target="#exampleModal2" class="btn" style={{backgroundColor:" #000",color: '#fff',width:"30%", marginBottom: '2rem'}}>Send</button>
                   </div>
                   <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-upload-success" role="document" style={{top: '30%', left: '0.35rem'}}>

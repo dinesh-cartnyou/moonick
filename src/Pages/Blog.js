@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import { Navbar } from '../Components/Navbar';
 import { Card } from '../Components/Blogs/Card';
 import { HorizontalCard } from '../Components/Blogs/HorizontalCard';
+import WrapperDiv from '../Components/wrapper-div';
 
 export const Blog = () => {
 
@@ -11,7 +12,8 @@ export const Blog = () => {
             <div class="badydiv">
                 <div class="universalDiv" style={{ backgroundColor: "#F5F5F5" }}>
                     <Navbar></Navbar>
-                    <section className="bodypanelmian aboutseller text-left">
+                    <WrapperDiv className={'aboutseller text-left'}>
+                    {/* <section className="bodypanelmian aboutseller text-left"> */}
                         <div className="strike-color" style={{ textAlign: "center", marginTop: "10px", marginBottom: "24px" }}>
                             <h6 className="strike-through-heading"><span style={{ margin: '0 0.2rem' }}>Blogs</span></h6>
                         </div>
@@ -28,7 +30,8 @@ export const Blog = () => {
                             <HorizontalCard></HorizontalCard>
                             <HorizontalCard></HorizontalCard>
                         </div>
-                    </section>
+                    {/* </section> */}
+                    </WrapperDiv>
                 </div>
                 </div>
         </Fragment>

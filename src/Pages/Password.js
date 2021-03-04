@@ -8,6 +8,7 @@ import {
     withStyles,
     createMuiTheme,
   } from '@material-ui/core/styles';
+import WrapperDiv from '../Components/wrapper-div';
 
   const CssTextField = withStyles({
     root: {
@@ -51,8 +52,9 @@ export const Password = () => {
             <div class="badydiv">
                 <div class="universalDiv" style={{height: '100vh', backgroundColor: '#f5f5f5'}}>
                     <RedNavbar navbar="Change Password"></RedNavbar>
-                    <section className="bodypanelmian aboutseller text-left">
-                      <div style={{height:"5rem"}}>
+                    <WrapperDiv className={'aboutseller text-left'} isFooterPresent={true} footerHeight={'60px'} headerHeight={'48px'} >
+                    {/* <section className="bodypanelmian aboutseller text-left"> */}
+                      <div style={{height:""}}>
                         <div class="row" style={{height:"100%", width: '100%'}}>
                             <div class="col-2" style={{display:"flex",padding:"none"}}>
                             <div class="customer-account-image">N</div>                          
@@ -66,27 +68,27 @@ export const Password = () => {
                         </div>
                       </div>
                       <form className={classes.root} noValidate autoComplete="off">
-                                        <CssTextField
-                                            className={classes.margin}
-                                            required="true"
-                                            label="New Password"
-                                            variant="outlined"
-                                            id="custom-css-outlined-input"
-                                        />                                        
-                                        <CssTextField
-                                            className={classes.margin}
-                                            required="true"
-                                            label="Confirm Password"
-                                            variant="outlined"
-                                            id="custom-css-outlined-input"
-                                        />                                                        
-                                    </form>
-                        <div style={{position:"relative",top:"24rem",display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column"}}>
-                        <button type="button" class="btn btn-danger" style={{backgroundColor:" #c2172e",width:"90%"}}>Save Changes</button>
+                          <CssTextField
+                              className={classes.margin}
+                              required="true"
+                              label="New Password"
+                              variant="outlined"
+                              id="custom-css-outlined-input"
+                          />                                        
+                          <CssTextField
+                              className={classes.margin}
+                              required="true"
+                              label="Confirm Password"
+                              variant="outlined"
+                              id="custom-css-outlined-input"
+                          />                                                        
+                      </form>
 
-                        </div>
-
-                    </section>
+                    {/* </section> */}
+                    </WrapperDiv>
+                    <div style={{height:'60px',position:"relative",display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column"}}>
+                      <button type="button" class="btn" style={{backgroundColor:" #000",width:"90%",color: '#fff'}}>Save Changes</button>
+                    </div>
                 </div>
             </div>
         </Fragment>

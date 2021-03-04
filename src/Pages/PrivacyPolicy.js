@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import { Navbar } from '../Components/Navbar';
+import WrapperDiv from '../Components/wrapper-div';
 
 export const PrivacyPolicy = () => {
 
@@ -9,7 +10,8 @@ export const PrivacyPolicy = () => {
             <div class="badydiv">
                 <div class="universalDiv" style={{backgroundColor:"white"}}>
                     <Navbar></Navbar>
-                    <section className="bodypanelmian aboutseller text-left">
+                    <WrapperDiv className={'aboutseller text-left'}>
+                    {/* <section className="bodypanelmian aboutseller text-left"> */}
                         <div className="strike-color" style={{ textAlign: "center", marginTop: "10px", marginBottom: "24px" }}>
                             <h6 className="strike-through-heading"><span style={{margin:'0 0.2rem'}}>Privacy Policy</span></h6>
                         </div>
@@ -50,7 +52,8 @@ export const PrivacyPolicy = () => {
                                 <li style={{fontSize:"12px",marginTop:"0.4rem"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
                             </ul>
                         </div>
-                    </section>
+                    {/* </section> */}
+                    </WrapperDiv>
                 </div>
             </div>
         </Fragment>

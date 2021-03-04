@@ -3,6 +3,7 @@
 import React, { Fragment } from 'react';
 import { Navbar } from '../Components/Navbar';
 import { ImageBox } from '../Components/VariantsPage/ImageBox';
+import WrapperDiv from '../Components/wrapper-div';
 
 export const Variants = () => {
   return (
@@ -12,7 +13,8 @@ export const Variants = () => {
           <div className='container'>
             <Navbar></Navbar>
           </div>
-          <section className='bodypanelmian variantspage'>
+          <WrapperDiv className='variantspage' isFooterPresent={true} footerHeight={'61px'}>
+          {/* <section className='bodypanelmian variantspage'> */}
             <div className='row no-gutters'>
               <div className='col-4'>
                 <div className='productimg'>
@@ -207,16 +209,19 @@ export const Variants = () => {
                 </div>
               </div>
             </div>
-            <div className='continebtn'>
-              <div className='row no-gutters'>
-                <div className='col'>
+          {/* </section> */}
+          </WrapperDiv>
+          <div className='continebtn' style={{height: '61px'}}>
+            <div className='row no-gutters h-100'>
+              <div className='col'>
+                <div className='px-2 w-100 d-flex align-items-center h-100'>
                   <button className='btn btn-danger w-100' type='button'>
                     Continue
                   </button>
                 </div>
               </div>
             </div>
-          </section>
+          </div>
         </div>
       </div>
     </Fragment>

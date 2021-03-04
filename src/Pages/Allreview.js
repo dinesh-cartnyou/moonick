@@ -3,6 +3,7 @@
 import React, { Fragment } from 'react';
 import { Navbar } from '../Components/Navbar';
 import { ProgressBar } from 'react-bootstrap';
+import WrapperDiv from '../Components/wrapper-div';
 
 export const Allreview = () => {
 
@@ -28,9 +29,9 @@ export const Allreview = () => {
                 <div class="universalDiv">
                     <div class="container" style={{ backgroundColor: "white" }}>
                         <Navbar></Navbar>
-
                     </div>
-                    <section class="bodypanelmian">
+                    <WrapperDiv>
+                    {/* <section class="bodypanelmian"> */}
                         <div class="container">
                             <div class="row no-gutters">
                                 <div class="row no-gutters" style={{ width: "100%" }}>
@@ -155,11 +156,11 @@ export const Allreview = () => {
                                                                 </div>
                                                                 <div class="productimg text-left">
                                                                     <div class="imgbox d-flex">
-                                                                        <img src="image/filter/img1.png" alt="" />
-                                                                        <img src="image/filter/img2.png" alt="" />
-                                                                        <img src="image/filter/img1.png" alt="" />
-                                                                        <img src="image/filter/img2.png" alt="" />
-                                                                        <img src="image/filter/img1.png" alt="" />
+                                                                        <img src="https://images.bewakoof.com/t540/white-half-sleeve-t-shirt-men-s-plain-t-shirts-105-1583992780.jpg" alt="" />
+                                                                        <img src="https://images.bewakoof.com/t540/white-half-sleeve-t-shirt-men-s-plain-t-shirts-105-1583992780.jpg" alt="" />
+                                                                        <img src="https://images.bewakoof.com/t540/white-half-sleeve-t-shirt-men-s-plain-t-shirts-105-1583992780.jpg" alt="" />
+                                                                        <img src="https://images.bewakoof.com/t540/white-half-sleeve-t-shirt-men-s-plain-t-shirts-105-1583992780.jpg" alt="" />
+                                                                        <img src="https://images.bewakoof.com/t540/white-half-sleeve-t-shirt-men-s-plain-t-shirts-105-1583992780.jpg" alt="" />
                                                                     </div>
                                                                 </div>
                                                                 <div class="namelike">
@@ -230,7 +231,8 @@ export const Allreview = () => {
                                 </div>
                             </div>
                         </div>
-                    </section>
+                    {/* </section> */}
+                    </WrapperDiv>
                 </div>
 
                 {/* <!-- Main container and section close --> */}

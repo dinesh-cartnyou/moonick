@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import {RedNavbar} from "../Components/RedNavbar";
-
+import WrapperDiv from '../Components/wrapper-div';
 
 export const ContactUs = () => {
 
@@ -9,7 +9,8 @@ export const ContactUs = () => {
             <div class="badydiv">
                 <div class="universalDiv" style={{height: '100vh',backgroundColor:"#F5F5F5"}}>
                     <RedNavbar navbar="Contact Us"></RedNavbar>
-                    <section className="bodypanelmian aboutseller text-left">
+                    <WrapperDiv className={'aboutseller text-left'} headerHeight={'48px'}>
+                    {/* <section className="bodypanelmian aboutseller text-left"> */}
                     <div class="sellerlocation" style={{backgroundColor:"white"}}>
                              <p style={{fontSize:"14px"}}>
                                 MY RETURN WAS PICKED UP BUT I HAVEN'T RECIEVED MY REFUND YET 
@@ -31,9 +32,10 @@ export const ContactUs = () => {
                             </p>
                             <hr style={{ margin: '1% 0' }} />
                             <p style={{margin:"0",fontSize:"13px",cursor:"pointer"}}>Have queries? please get in touch and we will be happy to help you</p>
-                            <p style={{margin:"0",fontSize:"15px",cursor:"pointer",color:"#c2172e"}}>Contact Us <i class='bx bxs-chevron-right' style={{position:'relative',top:"0.07rem"}}></i></p>
+                            <p style={{margin:"0",fontSize:"15px",cursor:"pointer",color:"#000"}}>Contact Us <i class='bx bxs-chevron-right' style={{position:'relative',top:"0.07rem"}}></i></p>
                         </div>
-                    </section>
+                    {/* </section> */}
+                    </WrapperDiv>
                 </div>
             </div>
         </Fragment>
